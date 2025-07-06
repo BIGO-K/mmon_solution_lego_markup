@@ -1,0 +1,1421 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 레고
+**/
+
+
+//< 템플릿 선택 페이지
+.m_lego-template {
+	display: none;
+	background-color: #e6e6e6;
+
+	&#{escape('.S=on')} {
+		display: block;
+		position: fixed;
+		z-index: const.$zIndex_most;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	> .mm_scroller {
+		padding: 61px 0;
+	}
+
+	h2 {
+		@include mixin.font(600 '3.4rem/4rem' center);
+
+		+ p {
+			padding-top: 18px;
+			@include mixin.font('1.7rem' center);
+		}
+	}
+
+	.mm_tab {
+		margin: 35px auto 0;
+		width: 1248px;
+
+		&_menu {
+			ul {
+				@include mixin.font('0' center);
+
+				> li {
+					display: inline-block;
+
+					&:nth-child(n+2) {
+						margin-left: 6px;
+					}
+				}
+			}
+
+			.btn_tab {
+				width: 200px;
+				height: 50px;
+				border-radius: 25px;
+				background-color: #fff;
+				@include mixin.font('1.8rem/5rem');
+
+				&#{escape('.S=tab-on')} {
+					background-color: var.$color_2nd;
+					color: #fff;
+				}
+			}
+		}
+
+		&-item {
+			padding-top: 38px;
+		}
+	}
+
+	&-empty {
+		padding-top: 120px;
+		height: 722px;
+		background-color: #fff;
+
+		> p {
+			@include mixin.font('1.7rem/2.7rem' center);
+
+			&::before {
+				display: block;
+				margin: 0 auto 42px;
+				width: 433px;
+				height: 233px;
+				@include mixin.background(url('../image/content/pc/template_empty.png') '0 0' no-repeat);
+				content: '';
+			}
+		}
+
+		.mm_btn_box {
+			margin-top: 26px;
+
+			.btn_create {
+				width: 200px;
+
+				.ico_link {
+					margin: 17px 0 0 6px;
+
+					&::before {
+						background-color: var.$color_2nd;
+					}
+				}
+			}
+		}
+	}
+
+	&-list {
+		> ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 30px 24px;
+			font-size: 0;
+
+			> li {
+				display: inline-block;
+				position: relative;
+
+				.image_template {
+					position: relative;
+					width: 400px;
+					height: 240px;
+					background-color: #fff;
+				}
+
+				> b {
+					display: block;
+					padding-top: 12px;
+					@include mixin.font('1.4rem/1.6rem');
+				}
+
+				// 새로 만들기
+				.btn_create {
+					padding-top: 89px;
+					width: 400px;
+					height: 240px;
+					background-color: #fff;
+					text-align: center;
+
+					.ico_add {
+						display: block;
+
+						&::before {
+							width: 28px;
+							height: 28px;
+							background-color: #101010;
+						}
+					}
+
+					> b {
+						margin-top: 17px;
+						font-size: 1.7rem;
+					}
+				}
+
+				// 편집하기, 미리보기 버튼
+				.mm_btn_box {
+					display: none;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin: -47px 0 0 -38px;
+					width: 77px;
+
+					.mm_btn {
+						width: 100%;
+						height: 30px;
+						@include mixin.font(#fff 600 '1.2rem/3rem');
+
+						&::after {
+							border-color: #fff;
+						}
+
+						i {
+							margin: 8px 6px 0 0;
+
+							&.ico_preview {
+								margin: 10px 6px 0 0;
+
+								&::before {
+									width: 10px;
+									height: 10px;
+									background-color: #fff;
+								}
+							}
+						}
+
+						&:nth-child(n+2) {
+							margin: 6px 0 0;
+						}
+					}
+				}
+
+				// 마우스 오버시
+				&:not(:has(.btn_create)):hover {
+					position: relative;
+
+					.image_template::before {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						background-color: rgba(#101416, 0.8);
+						content: '';
+					}
+
+					.mm_btn_box {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	> .btn_close {
+		position: fixed;
+		top: 0;
+		right: 0;
+		padding: 20px;
+
+		.ico_close::before {
+			width: 30px;
+			height: 30px;
+			background-color: #101010;
+		}
+	}
+}
+//> 템플릿 선택 페이지
+
+//< 블록 조합 페이지
+.m_lego {
+	height: 100%;
+
+	// 조합영역
+	&-build {
+		overflow: hidden;
+		position: relative;
+		padding-bottom: 50px;
+		height: 100%;
+
+		> .mm_scroller.T\=xy {
+			margin-left: var.$sidebar_content_base;
+		}
+
+		// 드래그되는 블록 이미지
+		> .image_block#{escape('.S=image_dragging')} {
+			position: absolute;
+			z-index: const.$zIndex_most;
+			padding: 4px;
+			width: 460px;
+			background-color: #fff;
+			cursor: none;
+		}
+
+		// 상단 플로팅 영역
+		&-floating {
+			position: fixed;
+			z-index: const.$zIndex_floating;
+			top: 20px;
+			right: 0;
+			left: var.$sidebar_content_base;
+			height: 0;
+
+			> * {
+				@include mixin.prefix(box-shadow, 0 2px 5px 0 rgba(#000, 0.16), webkit);
+				position: absolute;
+				top: 0;
+				height: 34px;
+				border-radius: 17px;
+				background-color: #fff;
+				@include mixin.font('1.4rem/3.5rem');
+			}
+
+			.btn_template {
+				right: 30px;
+				padding: 0 14px;
+
+				.ico_template {
+					margin: 10px 9px 0 0;
+
+					&::before {
+						width: 14px;
+						height: 14px;
+						background-color: #101010;
+					}
+				}
+
+				+ .m_lego-template {
+					display: none;
+				}
+			}
+		}
+
+		&-page {
+			padding: 90px 0 140px;
+			min-width: 100%;
+		}
+
+		// 하단 정보 영역
+		&-info {
+			position: relative;
+			background-color: var.$color_main;
+			padding-left: var.$sidebar_content_base;
+			height: 50px;
+			@include mixin.clearfix();
+
+			.mm_lside {
+				position: absolute;
+				top: 0;
+				left: var.$sidebar_content_base;
+				padding: 11px 18px;
+				font-size: 0;
+
+				> * {
+					display: inline-block;
+				}
+
+				.text_template {
+					position: relative;
+					margin-left: 18px;
+					padding-left: 18px;
+					@include mixin.font(#fff '1.3rem/3rem');
+
+					&::before {
+						position: absolute;
+						top: 8px;
+						left: 0;
+						height: 12px;
+						border-left: 1px solid rgba(#fff, 0.2);
+						content: '';
+					}
+
+					.btn_modify {
+						position: relative;
+						margin-left: 9px;
+
+						&::before {
+							position: absolute;
+							top: -10px;
+							right: -15px;
+							bottom: -10px;
+							left: -15px;
+							content: '';
+						}
+
+						.ico_modify {
+							margin-top: 6px;
+
+							&::before {
+								background-color: var.$color_2nd;
+							}
+						}
+					}
+				}
+			}
+
+			.mm_rside {
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 11px 18px;
+				font-size: 0;
+
+				> * {
+					display: inline-block;
+				}
+
+				.mm_btn_box {
+					margin-left: 24px;
+
+					.btn_preview {
+						.ico_preview {
+							margin: 8px 6px 0 0;
+						}
+					}
+
+					.btn_save {
+						.ico_save {
+							margin: 8px 6px 0 0;
+						}
+					}
+
+					// 저장하기 버튼
+					.mm_dropdown {
+						display: inline-block;
+
+						&#{escape('.S=on')} {
+							.btn_dropdown {
+								border-radius: 0 0 3px 3px;
+							}
+						}
+
+						.btn_dropdown {
+							.ico_save {
+								margin: 8px 6px 0 0;
+							}
+						}
+
+						&-item-inner {
+							position: absolute;
+							top: -64px;
+							right: 0;
+							left: 0;
+							padding: 9px 0 7px;
+							border-bottom: 1px solid rgba(#fff, 0.3);
+							border-radius: 3px 3px 0 0;
+							background-color: var.$color_2nd;
+
+							button {
+								display: block;
+								padding: 3px 10px;
+								@include mixin.font(rgba(#fff, 0.6) '1.3rem/1.4' left);
+
+								&:hover {
+									color: rgba(#fff, 1);
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// 페이지 선택
+			#{escape('.m...info-page')} {
+				> b {
+					@include mixin.font(#fff '1.3rem/3rem');
+				}
+
+				.mm_dropdown {
+					display: inline-block;
+					margin-left: 8px;
+
+					&#{escape('.S=on')} {
+						.btn_dropdown {
+							border-radius: 0 0 3px 3px;
+
+							&::before {
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								border-top: 1px solid rgba(#fff, 0.1);
+								content: '';
+							}
+						}
+					}
+
+					.btn_dropdown {
+						padding: 0 12px;
+						width: 130px;
+						height: 28px;
+						border-radius: 14px;
+						background-color: #4d5155;
+						@include mixin.font(#fff '1.3rem/3rem' left);
+
+						.ico_dropdown {
+							right: 12px;
+						}
+					}
+
+					&-item {
+						position: absolute;
+						z-index: const.$zIndex_floating;
+						right: 0px;
+						bottom: 28px;
+						left: 0px;
+						height: auto;
+
+						ul {
+							padding: 9px 0 7px;
+							border-radius: 3px 3px 0 0;
+							background-color: #4d5155;
+
+							a {
+								display: block;
+								padding: 0 12px;
+								@include mixin.font(#fff '1.3rem/2.5rem');
+
+								&#{escape('.S=page-on')} {
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			#{escape('.m...info-device')} {
+				text-align: center;
+
+				ul {
+					display: inline-block;
+
+					li {
+						float: left;
+						position: relative;
+
+						&:nth-child(n+2)::before {
+							position: absolute;
+							top: 50%;
+							left: 0;
+							margin-top: -5px;
+							width: 1px;
+							height: 10px;
+							background-color: #3d3d3d;
+							content: '';
+						}
+
+						button {
+							padding: 16px 16px 15px;
+
+							&#{escape('.S=device-on')} {
+								i::before {
+									background-color: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// 총 비용
+			#{escape('.m...info-price')} {
+				position: relative;
+				font-size: 0;
+
+				> .text_price {
+					display: inline-block;
+					position: relative;
+					@include mixin.font(#fff '1.3rem/2.8rem');
+
+					.btn_total-price {
+						margin-right: 16px;
+						@include mixin.font(rgba(#fff, 0.8) v_500 '1.3rem/3rem');
+
+						.ico_more {
+							margin: 10px 0 0 6px;
+						}
+
+						&::after {
+							position: absolute;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							content: '';
+						}
+					}
+
+					strong {
+						vertical-align: -2px;
+						@include mixin.font(v_500 '2rem');
+
+						&::after {
+							vertical-align: 2px;
+							@include mixin.font(rgba(#fff, 0.8) '1.3rem');
+						}
+					}
+
+					&#{escape('.S=switch-on')} + #{escape('.m...info-price-detail')}{
+						display: block;
+						z-index: const.$zIndex_floating;
+						height: auto;
+
+						@include mixin.opacity(1);
+					}
+				}
+
+				&-detail {
+					position: absolute;
+					z-index: -1;
+					bottom: 40px;
+					margin-left: -92px;
+					padding: 18px 15px 23px;
+					width: 312px;
+					height: 0;
+					border: 1px solid #2a2a2a;
+					border-radius: 3px 3px 0 0;
+					background-color: #fff;
+					@include mixin.opacity(0);
+
+					h5 {
+						padding-bottom: 15px;
+						@include mixin.font(v_700 '1.6rem');
+					}
+
+					.mm_scroller {
+						max-height: 500px;
+
+						li {
+							position: relative;
+							border-top: 1px solid #dcdcdc;
+							@include mixin.font(v_600 '1.4rem/3.8rem');
+
+							.text_price {
+								position: absolute;
+								top: 0;
+								right: 0;
+
+								strong {
+									@include mixin.font(v_600 '1.4rem/3.8rem');
+
+									&::after {
+										vertical-align: 0;
+									}
+								}
+							}
+						}
+					}
+
+					dl {
+						padding-top: 5px;
+						border-top: 2px solid #16181e;
+
+						dt {
+							display: inline-block;
+							@include mixin.font(v_600 '1.4rem/3.8rem');
+						}
+
+						dd {
+							float: right;
+
+							.text_price {
+								strong {
+									@include mixin.font(v_700 '1.7rem/3.8rem');
+
+									&::after {
+										@include mixin.font(v_600 '1.4rem');
+									}
+								}
+							}
+						}
+					}
+
+					.mm_note {
+						margin-top: 9px;
+					}
+
+					.btn_close {
+						position: absolute;
+						top: 9px;
+						right: 5px;
+						padding: 10px;
+
+						.ico_close::before {
+							width: 14px;
+							height: 14px;
+							background-color: #4a4a4a;
+						}
+					}
+				}
+			}
+		}
+
+		// 블록 확대보기
+		&-block {
+
+		}
+	}
+
+	// 블록 확대보기 모달
+	&-block {
+		&-modal {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: var.$sidebar_content_base;
+			@include mixin.opacity(0);
+			@include mixin.transition(opacity const.$time_fast);
+
+			&#{escape('.S=on')} {
+				z-index: const.$zIndex_most;
+				@include mixin.opacity(1);
+			}
+
+			#{escape('.m...modal-dim')} {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(#000, 0.7);
+			}
+
+			#{escape('.m...modal-item')} {
+				display: grid;
+				grid-template: 34px 1fr 80px/100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				max-height: 90%;
+				width: 1360px;
+				@include mixin.transform(translate(-50%, -50%));
+
+				.text_title {
+					padding-bottom: 14px;
+					@include mixin.font(#00f8ff '2rem');
+				}
+
+				.image_block {
+					display: block;
+					background-color: #f5f5f5 ;
+					text-align: center;
+
+					&:empty {
+						position: relative;
+						height: 250px;
+
+						&::before {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 20%;
+							height: 100%;
+							@include mixin.transform(translate(-50%, -50%));
+							@include mixin.svg(#d3d3d3 url('../image/common/logo.svg') '50% 50%/contain' no-repeat);
+							content: '';
+						}
+					}
+
+					img {
+						width: auto;
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+
+				.mm_foot {
+					margin-top: 34px;
+
+					button {
+						width: 200px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 블록 조합 캔버스
+.m_lego-build-canvas {
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	background-color: #fff;
+
+	// 딤
+	#{escape('.m...canvas-dim')} {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		@include mixin.background(url('../image/common/bg_dim.png') '0 0/contain' repeat);
+		@include mixin.opacity(0);
+		@include mixin.transition(opacity const.$time_base);
+		pointer-events: none;
+
+		&#{escape('.S=dim-on')} {
+			@include mixin.opacity(1);
+			pointer-events: auto;
+
+			~ #{escape('.m...canvas-body')} {
+				#{escape('.m...canvas-container')}:not([class*="T="]):not(.S\=on)::after {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					content: '';
+				}
+			}
+		}
+	}
+
+	// 헤더
+	#{escape('.m...canvas-header')} {
+		position: relative;
+
+		.text_block {
+			position: absolute;
+			right: 0;
+			top: -26px;
+			padding: 0 8px;
+			height: 28px;
+			border-radius: 3px 3px 0 0;
+			background-color: var.$color_3rd;
+			@include mixin.opacity(0);
+			@include mixin.font(#fff '1.5rem/2.8rem');
+		}
+
+		&#{escape('.S=on')} {
+			z-index: 1;
+
+			.text_block {
+				@include mixin.opacity(1);
+			}
+
+			&::after {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border: 2px dashed var.$color_3rd;
+				content: '';
+			}
+		}
+
+		.m_lego-controller {
+			top: 0;
+			right: -54px;
+		}
+	}
+
+	// 바디
+	#{escape('.m...canvas-body')} {
+		min-height: 500px;
+	}
+
+	// 푸터
+	#{escape('.m...canvas-footer')} {
+		position: relative;
+
+		.m_lego-controller {
+			top: 0;
+			right: -54px;
+		}
+
+		.text_block {
+			position: absolute;
+			right: 0;
+			top: -26px;
+			padding: 0 8px;
+			height: 28px;
+			border-radius: 3px 3px 0 0;
+			background-color: var.$color_3rd;
+			@include mixin.opacity(0);
+			@include mixin.font(#fff '1.5rem/2.8rem');
+		}
+
+		&#{escape('.S=on')} {
+			z-index: 1;
+
+			.text_block {
+				@include mixin.opacity(1);
+			}
+
+			&::after {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border: 2px dashed var.$color_3rd;
+				content: '';
+			}
+		}
+	}
+
+	// 블록 공통
+	#{escape('.m...canvas-container')} {
+		position: relative;
+		@include mixin.font('0' center);
+
+		// 첫번 째 블록 요소
+		&:not(#{escape('.T=container-empty')}):first-child {
+			padding-top: 0;
+
+			&:has(#{escape('.T=grid-column')}) {
+				&#{escape('.S=on')} {
+					&::before {
+						border-top: 0;
+					}
+
+					&::after {
+						position: absolute;
+						z-index: 2;
+						top: 0;
+						right: 0;
+						left: 0;
+						border-top: 2px dashed var.$color_3rd;;
+						content: '';
+					}
+				}
+			}
+		}
+
+		// 블록 활성화
+		&#{escape('.S=on')} {
+			z-index: 2;
+			background-color: #fff;
+
+			&::before {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border: 2px dashed var.$color_3rd;
+				content: '';
+			}
+
+			> .text_block {
+				@include mixin.opacity(1);
+			}
+
+			> .m_lego-controller {
+				display: block;
+			}
+		}
+
+		// 컨텐츠 없을 때
+		&#{escape('.T=container-empty')},
+		&#{escape('.T=container-guide')} {
+			padding: 0;
+			min-height: 80px;
+			background-color: #f1f2f6;
+			pointer-events: none;
+
+			&:first-child {
+				margin-top: 0 !important;
+			}
+
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border: 2px dashed #8b9bcb;
+				content: '';
+			}
+		}
+
+		&#{escape('.T=container-guide')} {
+			z-index: 1;
+			background-color: transparent;
+
+			&::after {
+				top: 30px;
+				bottom: 30px;
+				background-color: #f1f2f6;
+			}
+		}
+
+		// w0 블록
+		&#{escape('.S=container-full')} {
+			#{escape('.m...canvas-container-inner')} {
+				width: 100%;
+			}
+		}
+
+		// 블록 명칭
+		.text_block {
+			position: absolute;
+			right: 0;
+			top: -26px;
+			padding: 0 8px;
+			height: 28px;
+			border-radius: 3px 3px 0 0;
+			background-color: var.$color_3rd;
+			@include mixin.opacity(0);
+			@include mixin.font(#fff '1.5rem/2.8rem');
+		}
+
+		.m_lego-controller {
+			display: none;
+		}
+
+		&-inner {
+			position: relative;
+			margin: 0 auto;
+		}
+	}
+
+	// 블록 아이템
+	#{escape('.m...canvas-block')} {
+		position: relative;
+		z-index: 0;
+		margin: 0 auto;
+
+		&-title {
+			margin: 0 auto;
+			text-align: left;
+
+			// 정렬
+			$align: 'center', 'right';
+			@each $text in $align {
+				&#{escape('.T=#{$text}')} {
+					text-align: #{$text};
+				}
+			}
+		}
+	}
+
+	// PC
+	&#{escape('.T=canvas-pc')} {
+		width: 1088px;
+
+		#{escape('.m...canvas-container')} {
+			padding: 74px 0;
+
+			&#{escape('.S=on')} {
+				// 조합형 블록 아이템
+				#{escape('.T=grid-column')} {
+					&#{escape('.S=on')},
+					&:hover {
+						@include mixin.transform(translate(0, 0));
+
+						&::before {
+							position: absolute;
+							z-index: 1;
+							top: 0;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							border: 2px dashed var.$color_3rd;
+							content: '';
+						}
+
+						> .text_block {
+							@include mixin.opacity(1);
+						}
+
+						> .m_lego-controller {
+							display: block;
+
+							&::before {
+								position: fixed;
+								top: 0;
+								right: 0;
+								bottom: -72px;
+								left: 0;
+								content: '';
+							}
+						}
+
+						&::after {
+							content: none !important;
+						}
+					}
+
+					&:has(~ #{escape('.S=on')})::after,
+					&#{escape('.S=on')} ~ *::after,
+					&:has(~ :hover)::after,
+					&:hover ~ *::after {
+						position: absolute;
+						z-index: 1;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						border: 2px dashed var.$color_3rd;
+						background-color: #fff;
+						@include mixin.opacity(0.55);
+						content: '';
+					}
+				}
+
+				#{escape('.m...canvas-container-inner')} {
+					z-index: 1;
+				}
+			}
+
+			&#{escape('.T=container-empty')} {
+				margin: -44px 0 30px;
+
+				> p {
+					padding: 94px 0 92px;
+					@include mixin.font(const.$color_text_base '2.3rem/3.2rem' center);
+				}
+			}
+
+			&-inner {
+				@include mixin.flex-container();
+				gap: 0 18px;
+				width: 770px;
+
+				&:has(#{escape('.m...canvas-block')}:only-child) {
+					z-index: 0;
+				}
+
+				> * {
+					@include mixin.prefix(flex, auto, webkit);
+				}
+			}
+
+			&:only-of-type {
+				.m_lego-controller {
+					.btn_up,
+					.btn_down {
+						display: none;
+					}
+				}
+			}
+
+			&:first-of-type {
+				.m_lego-controller {
+					.btn_up {
+						display: none;
+					}
+				}
+			}
+
+			&:last-of-type {
+				.m_lego-controller {
+					.btn_down {
+						display: none;
+					}
+				}
+
+				&:nth-child(n+2) {
+					margin-bottom: -74px;
+				}
+			}
+
+			+ * {
+				margin-top: -74px;
+			}
+		}
+
+		#{escape('.m...canvas-block')} {
+			&#{escape('.T=grid-column')} {
+				display: inline-block;
+			}
+
+			&:first-of-type {
+				.m_lego-controller {
+					.btn_left {
+						display: none;
+					}
+				}
+			}
+
+			&:last-of-type {
+				.m_lego-controller {
+					.btn_right {
+						display: none;
+					}
+				}
+			}
+
+			&-title {
+				position: relative;
+				width: 100%;
+				max-width: 770px;
+
+				// 메인타이틀
+				.title_main {
+					margin-bottom: 19px;
+					@include mixin.font(const.$color_text_base '2.1533rem/2.37997rem');
+
+					+ .title_sub {
+						margin-top: -7px;
+					}
+				}
+
+				.title_sub {
+					margin-bottom: 17px;
+					@include mixin.font(const.$color_text_base '1.47331rem/1.69998rem');
+				}
+			}
+		}
+
+		#{escape('.m...canvas-footer')} {
+			margin-top: 112px;
+		}
+	}
+
+	// 모바일
+	&#{escape('.T=canvas-mobile')} {
+		width: 500px;
+
+		#{escape('.m...canvas-container')} {
+			padding: 93px 0;
+
+			+ * {
+				margin-top: -74px;
+			}
+		}
+
+		#{escape('.m...canvas-block')} {
+			&-title {
+				position: relative;
+				padding: 0 21px;
+				width: 500px;
+
+				// 메인타이틀
+				.title_main {
+					margin-bottom: 27px;
+					@include mixin.font(const.$color_text_base '2.66666rem/3.2rem');
+
+					+ .title_sub {
+						margin: -9px 0 25px;
+					}
+				}
+
+				.title_sub {
+					margin-bottom: 25px;
+					@include mixin.font(const.$color_text_base '2.26666rem/2.8rem');
+				}
+			}
+
+			+ #{escape('.m...canvas-block')} {
+				margin-top: 26px;
+			}
+		}
+
+		#{escape('.m...canvas-footer')} {
+			margin-top: -27px;
+		}
+
+		#{escape('.m...canvas-toolbar')} {
+			position: relative;
+
+			&#{escape('.S=on')} {
+				z-index: 1;
+
+				.text_block {
+					@include mixin.opacity(1);
+				}
+
+				&::after {
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					border: 2px dashed var.$color_3rd;
+					content: '';
+				}
+			}
+
+			.text_block {
+				position: absolute;
+				right: 0;
+				top: -26px;
+				padding: 0 8px;
+				height: 28px;
+				border-radius: 3px 3px 0 0;
+				background-color: var.$color_3rd;
+				@include mixin.opacity(0);
+				@include mixin.font(#fff '1.5rem/2.8rem');
+			}
+
+			.m_lego-controller {
+				top: 0;
+				right: -54px;
+			}
+		}
+	}
+
+	// 캔버스 ON
+	&#{escape('.S=canvas-on')} {
+		display: block;
+	}
+}
+
+// 컨테이너/블록 컨트롤러
+.m_lego-controller {
+	position: absolute;
+	z-index: 1;
+	border-radius: 3px;
+	background-color: var.$color_3rd;
+	@include mixin.prefix(box-shadow, 0 0 10px 0 rgba(#000, 0.16), webkit);
+
+	> li {
+		position: relative;
+
+		button {
+			width: 44px;
+			height: 44px;
+
+			&.btn_block-change {
+				padding-top: 8px;
+
+				> b {
+					display: block;
+					margin-top: 4px;
+					@include mixin.font(#fff '1.1rem' center);
+				}
+			}
+		}
+
+		> b {
+			display: none;
+			position: absolute;
+			padding: 0 8px;
+			border-radius: 3px;
+			background-color: var.$color_3rd;
+			@include mixin.prefix(box-shadow, 0 2px 5px 0 rgba(#000, 0.16), webkit);
+			@include mixin.font(#fff '1.2rem/2.4rem', nowrap);
+
+			&::before {
+				position: absolute;
+				content: '';
+			}
+		}
+
+		// 마우스 오버 시
+		&:hover {
+			> b {
+				display: inline-block;
+				top: 50%;
+				margin: -12px 0 0 5px;
+				height: 24px;
+
+				&::before {
+					top: 50%;
+					left: -4px;
+					margin-top: -3px;
+					@include mixin.triangle(var.$color_3rd, left, 3px, 4px);
+				}
+			}
+		}
+	}
+
+	#{escape('.m...canvas-container')} > & {
+		> li:hover {
+			> b {
+				top: 50%;
+				margin: -12px 0 0 5px;
+			}
+		}
+	}
+
+	// 블록 컨트롤러
+	&#{escape('.T=controller-horizontal')} {
+		right: 0;
+		bottom: -54px;
+
+		li {
+			float: left;
+			height: 100%;
+
+			> b {
+				top: auto;
+				bottom: -29px;
+				left: 50%;
+				margin-left: 0;
+				@include mixin.transform(translateX(-50%));
+
+				&::before {
+					top: -1px;
+					left: 50%;
+					margin-left: -3px;
+					@include mixin.triangle(var.$color_3rd, top, 3px, 4px);
+				}
+			}
+
+			&:not(:first-child) {
+				border-left: 1px solid #6a6a6a;
+			}
+		}
+	}
+
+	// 컨테이너 컨트롤러
+	#{escape('.m...canvas-container')} > & {
+		right: -54px;
+		bottom: 0;
+
+		> li:not(:first-child) {
+			border-top: 1px solid #6a6a6a;
+		}
+	}
+}
+
+// 확대보기 모달
+.m_lego-view-modal {
+	overflow: hidden;
+	position: fixed;
+	z-index: const.$zIndex_modal;
+	top: var.$header_height_base;
+	right: 0;
+	bottom: 0;
+	left: var.$sidebar_content_base;
+	background-color: rgba(#000, 0.7);
+	@include mixin.opacity(0, none);
+	@include mixin.transition(opacity const.$time_fast);
+
+	#{escape('.m...modal-content')} {
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		@include mixin.transform(translateY(-50%));
+
+		> i {
+			max-width: 85%;
+			max-height: 85%;
+		}
+
+		.mm_btn_box {
+			margin-top: 34px;
+
+			.mm_btn {
+				width: 200px;
+			}
+		}
+	}
+
+	&#{escape('.S=on')} {
+		z-index: const.$zIndex_modal;
+		@include mixin.opacity(1, auto);
+	}
+}
+//> 블록 조합 페이지

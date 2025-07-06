@@ -1,0 +1,88 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../common/helper/extend';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 텍스트, 알림, 대체텍스트, 타이틀, 태그, 플래그, 뱃지
+**/
+
+
+//< 기본형
+.mm_text {
+	//< 강조
+	&-primary {
+		color: var.$color_main !important;
+
+		// &-light {
+		// 	color: var.$color_point !important;
+		// }
+
+		// &-lightest {
+		// 	color: var.$color_point !important;
+		// }
+
+		// &-dark {
+		// 	color: var.$color_point !important;
+		// }
+	}
+	&-secondary {
+		color: var.$color_2nd !important;
+	}
+	// &-tertiary {
+	// 	color: var.$color_3rd !important;
+	// }
+	//> 강조
+
+	//< 상태(긍정/부정)
+	// &-positive {
+	// 	color: var.$color_positive_base;
+	// }
+	&-negative {
+		color: var.$color_negative_base;
+	}
+	//> 상태(긍정/부정)
+}
+//> 기본형
+
+//< 유의사항
+.mm_note {
+	margin-top: 15px;
+	@include mixin.font(const.$color_text_base '1.3rem/1.5rem');
+
+	ul {
+		margin-left: 2px;
+
+		li {
+			position: relative;
+			padding-left: 8px;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: -4px;
+				content: 'ㆍ';
+			}
+
+			strong {
+				@include mixin.font(const.$color_text_base v_600);
+			}
+		}
+	}
+
+	> p {
+		@include mixin.font(#6a6a6a '1.2rem/1.6rem');
+	}
+}
+//> 유의사항
+
+//< 가격
+.text_price {
+	@extend %textPrice !optional;
+}
+//> 가격

@@ -1,0 +1,57 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 섹션, 영역, 스크롤러, 라인, 싱커, 플렉스 등 기본 공통영역
+**/
+
+
+//< 섹션
+.mm_section {
+	> h6.mm_strapline {
+		margin-top: 25px;
+	}
+}
+//> 섹션
+
+//< 이너
+.mm_inner {
+	position: relative;
+	margin: 0 auto;
+	width: 1360px;
+	@include mixin.clearfix();
+}
+//> 이너
+
+//< 스크롤러
+.mm_scroller {
+	// 커스텀
+	&::-webkit-scrollbar {
+		width: 6px;
+		height: 6px;
+
+		&-thumb {
+			border-radius: 3px;
+			background-color: var.$color_scrollbar_thumb;
+		}
+
+		&-track {
+			background-color: var.$color_scrollbar_track;
+		}
+
+		&-corner {
+			background-color: var.$color_scrollbar_track;
+		}
+	}
+
+	// 커스텀 - 파이어폭스 대응
+	scrollbar-width: thin;
+	scrollbar-color: var.$color_scrollbar_thumb var.$color_scrollbar_track;
+}
+//> 스크롤러

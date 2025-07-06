@@ -1,0 +1,230 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 레이아웃
+ * 모달
+**/
+
+
+//< 모달 영역
+.mm_modal {
+	overflow: hidden;
+	position: fixed;
+	z-index: const.$zIndex_modal;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	&-items {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+//> 모달 영역
+
+//< 모달 요소
+.mm_modal-item {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	@include mixin.opacity(0, none);
+	@include mixin.transform(scale(1.1));
+	@include mixin.transition(opacity const.$time_fast, transform const.$time_fast);
+
+	&-dim {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#000, 0.78);
+	}
+
+	&-inner {
+		display: grid;
+		grid-template-rows: var.$modal_header_height_base calc(100% - var.$modal_header_height_base);
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: var.$modal_width_base;
+		max-width: 96%;
+		max-height: 90%;
+		border-radius: 3px;
+		background-color: #fff;
+		@include mixin.transform(translate(-50%, -50%));
+
+		// 모달 닫기
+		.btn_modal-close {
+			position: absolute;
+			z-index: const.$zIndex_modal;
+			top: 0;
+			right: 0;
+			background-color: #fff;
+
+			.ico_modal-close {
+				padding: 16px;
+			}
+		}
+
+		// 헤더
+		// #{escape('.mm_modal...head')} {
+		// 	padding: 0 16px 0 18px;
+		// 	height: var.$modal_header_height_base;
+		// 	border-bottom: 1px solid #e6e6e6;
+
+		// 	h2 {
+		// 		@include mixin.font('1.7rem/5rem');
+		// 	}
+		// }
+
+		// 본문
+		#{escape('.mm_modal...content')} {
+			> .mm_scroller {
+				padding: 22px 22px 45px;
+			}
+		}
+
+		// 헤더가 없을 경우
+		> #{escape('.mm_modal...content')}:first-child {
+			grid-row: 1 / 3;
+		}
+	}
+
+	&#{escape('.S=on')} {
+		z-index: 1;
+		@include mixin.opacity(1, auto);
+		@include mixin.transform(scale(1));
+		// @include mixin.transition(transform const.$time_fast);
+	}
+}
+//> 모달 요소
+
+//< 템플릿명 편집
+.m_modal-template-modify {
+	#{escape('.mm_modal...content')} {
+		.mm_scroller {
+			padding: 46px 61px 45px;
+		}
+	}
+
+	h2 {
+		padding-bottom: 27px;
+		@include mixin.font(v_600 '2rem/2.8rem' center);
+	}
+
+	.mm_foot {
+		margin-top: 20px;
+
+		.mm_btn {
+			padding: 0 34px;
+		}
+	}
+}
+//> 템플릿명 편집
+
+//< 화면구성 가이드
+.m_modal-lego-guide {
+	.mm_modal-item-inner {
+		width: var.$modal_width_xl;
+		background-color: transparent;
+
+		.mm_scroller {
+			padding: 0 0 1px 0;
+		}
+	}
+
+	.mm_carousel {
+		&-inner {
+			padding: 0 56px;
+		}
+
+		&-list {
+			height: 660px;
+			background-color: #fff;
+		}
+
+		&-item {
+			text-align: center;
+
+			figure {
+				.image_step {
+					width: 100%;
+					height: 380px;
+				}
+
+				figcaption {
+					margin-top: 42px;
+
+					.text_step {
+						@include mixin.font('1.6rem/2.3rem');
+
+						strong {
+							display: block;
+							padding-bottom: 8px;
+							@include mixin.font(v_700 '2.4rem/1.4');
+						}
+					}
+
+					.mm_btn {
+						margin-top: 22px;
+						width: 118px;
+
+						.ico_more {
+							margin: 16px 0 0 3px;
+
+							&::before {
+								width: 5px;
+								height: 15px;
+								background-color: var.$color_2nd;
+							}
+						}
+
+						&::after {
+							border-radius: 0;
+						}
+					}
+				}
+			}
+		}
+
+		&-control {
+			width: 100%;
+
+			button {
+				i::before {
+					background-color: #fff;
+				}
+			}
+		}
+
+		&-pagination {
+			bottom: 35px;
+
+			ol {
+				li:nth-child(n+2) {
+					margin-left: 8px;
+				}
+			}
+			.btn_carousel-page {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+
+	.btn_modal-close {
+		right: 56px;
+		background-color: transparent;
+	}
+}
+//> 화면구성 가이드

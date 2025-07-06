@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>M.Mon solution LEGO</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+		body {overflow-y: scroll;background-color:#fff;}
+		#mm_view {margin:0 auto 100px;width:1600px;}
+		h1 {margin-bottom:30px;padding:25px 0;background:#00989c;color:#fff;font-size:40px;text-align:center;}
+
+		.mm_tab-menu {border: 0;}
+		.mm_tab-menu ul:not(.mm_flex) {height: auto;}
+		.mm_tab-menu ul:not(.mm_flex) {display:flex;border-right:1px solid #bcbcbc;}
+		.mm_tab-menu ul:not(.mm_flex) > li {flex:auto;border:1px solid #bcbcbc;border-right:0;background:#fafafa;color:#bcbcbc;font-size:14px;}
+		.mm_tab-menu ul:not(.mm_flex) > li > .btn_tab {padding:15px;width:100%;height: auto;font-size:14px;line-height: 1;text-align:center;}
+		.mm_tab-menu ul:not(.mm_flex) > li > .btn_tab.S\=tab-on {background:#fff;color: #202020;font-weight:700;}
+		.mm_tab-item {display:none;}
+		.mm_tab-item.S\=tab-on {display:block;}
+
+		.mm_tab-item {margin-top:-1px;border:1px solid #bcbcbc;}
+		.mm_tab-item section {border-bottom:1px solid #ddd;}
+		.mm_tab-item section h2 {padding:12px 10px;font-size:15px;}
+		.mm_tab-item section > ul > li:nth-child(even) {background:#fafafa;}
+		.mm_tab-item section li {position:relative;padding-left:30px;}
+		.mm_tab-item section li > ul .mm_flex {border-top:1px solid #f4f4f4;}
+		.mm_tab-item section li ul:before {position:absolute;top:35px;bottom:10px;left:48px;border-left:1px solid #ddd;content:'';}
+		.mm_tab-item section .mm_flex {align-items:center;-webkit-align-items:center;padding:8px 0px;line-height:18px;}
+		.mm_tab-item section .mm_flex:hover {background:#dfdfdf;}
+		.mm_tab-item section .mm_flex div {padding:0 10px;font-size:13px;text-align:center;}
+		.mm_tab-item section .mm_flex div.text_name {flex:1;-webkit-flex:1;text-align:left;}
+		.mm_tab-item section .mm_flex div.text_link {width:350px;text-align:left;}
+		.mm_tab-item section .mm_flex div:nth-child(3) {width:100px;}
+		.mm_tab-item section .mm_flex div:nth-child(4) {width:450px;text-align:left;}
+		.mm_tab-item section .mm_flex del {color:#aaa;}
+		.mm_tab-item section .text_tag {display:inline-block;padding:1px 5px;border:1px solid #ee1111;border-radius:3px;background:#fff;color:#ee1111;font-size:12px;}
+		.mm_tab-item section .text_tag.T\=develop,
+		.mm_tab-item section .text_tag.T\=complete {border-color:#04aa37;color:#04aa37;}
+		.mm_tab-item section .text_tag.T\=working {border-color:#558eda;color:#558eda;}
+		.mm_tab-item section .text_tag.T\=checking {border-color:#973af3;color:#973af3;}
+		.mm_tab-item section .text_tag.T\=recheck {border-color:#e83af3;color:#e83af3;}
+		.mm_tab-item section .text_tag.T\=remove {border-color:#aaa;color:#aaa;}
+		.mm_tab-item section .text_color1 {color:#558eda;}/*진행중*/
+		.mm_tab-item section .text_color2 {color:#973af3;}/*개발전달*/
+		.mm_tab-item section .text_color3 {color:#ee1111;}/*긴급,변경사항*/
+	</style>
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="js/lib/lodash-4.17.21.min.js"></script>
+
+	<!-- 공통 스크립트 -->
+	<script src="js/app_common.js"></script>
+</head>
+<body>
+	<div id="mm_view">
+		<h1><b>M.Mon solution LEGO</b></h1>
+
+		<!--
+			인덱스
+			(D) 태그 상태에 따라 text_tag에 상태 클래스를 추가하고(미작업 제외), 링크가 없는 li의 경우 .text_name을 제외한 나머지 div 요소를 삭제합니다.
+		-->
+		<div class="mm_tab" data-tab>
+			<nav class="mm_tab-menu">
+				<ul>
+					<li><a class="btn_tab S=tab-on" href="javascript:;">레고</a></li>
+				</ul>
+			</nav>
+
+			<!-- 레고 -->
+			<div class="mm_tab-item S=tab-on">
+				<section>
+					<h2><b>레고</b></h2>
+					<ul>
+						<li>
+							<a class="mm_flex">
+								<div class="text_name">레고 메인</div>
+								<div class="text_link">lego.html</div>
+								<div><span class="text_tag T=working"></span></div>
+								<div></div>
+							</a>
+							<ul>
+								<li>
+									<a class="mm_flex">
+										<div class="text_name">(모달) 화면구성 가이드</div>
+										<div class="text_link">_modal_guide.html</div>
+										<div><span class="text_tag T=working"></span></div>
+										<div></div>
+									</a>
+								</li>
+								<li>
+									<a class="mm_flex">
+										<div class="text_name">(모달) 템플릿명 편집</div>
+										<div class="text_link">_modal_templateModify.html</div>
+										<div><span class="text_tag T=working"></span></div>
+										<div></div>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<!--// 레고 -->
+		</div>
+		<!--// 인덱스 -->
+
+		<!-- 페이지 스크립트 -->
+		<script>
+			var $tag = mm.find('.text_tag');
+			var count = { _complete: 0, _develop: 0, _working: 0, _checking: 0, _recheck: 0, _ready: 0, _remove: 0 };
+
+			_.forEach($tag, function (__$tag) {
+
+				var $a = __$tag.closest('a');
+				var _class = __$tag.getAttribute('class');
+
+				if (_class.includes('complete')) {
+					count._complete++;
+					__$tag.textContent = '완료';
+				}
+				else if (_class.includes('develop')) {
+					count._develop++;
+					__$tag.textContent = '개발가능';
+				}
+				else if (_class.includes('working')) {
+					count._working++;
+					__$tag.textContent = '작업중';
+				}
+				else if (_class.includes('checking')) {
+					count._checking++;
+					__$tag.textContent = '검수중';
+				}
+				else if (_class.includes('recheck')) {
+					count._recheck++;
+					__$tag.textContent = '재검수';
+				}
+				else if (_class.includes('remove')) {
+					count._remove++;
+					__$tag.textContent = '삭제';
+
+					_.forEach(mm.siblings(__$tag.parentElement), function (__$el) {
+
+						mm.element.wrap(__$el, 'del', true);
+
+					});
+				}
+				else {
+					count._ready++;
+					__$tag.textContent = '미작업';
+					return;
+				}
+
+				mm.element.attribute($a, { 'href': mm.string.template('html/${LINK}', { LINK: mm.find('.text_link', $a)[0].textContent }), 'target': '_blank' });
+
+			});
+
+			console.log('총 페이지 수: ' + $tag.length);
+			console.log('완료: ' + count._complete);
+			console.log('개발가능: ' + count._develop);
+			console.log('삭제: ' + count._remove);
+			console.log('검수중: ' + count._checking);
+			console.log('재검수: ' + count._recheck);
+			console.log('작업중: ' + count._working);
+			console.log('미작업: ' + count._ready);
+		</script>
+	</div>
+</body>
+</html>

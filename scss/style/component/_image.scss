@@ -1,0 +1,383 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 이미지, 백그라운드, 아이콘 등 이미지의 기본 단위
+**/
+
+
+//< 기본형
+.mm_image {
+	// 이미지 없음
+	&-none {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background-color: #f5f5f5 !important;
+
+		.ico_none::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 100%;
+			@include mixin.transform(translate(-50%, -50%));
+			@include mixin.svg(#d3d3d3 url('../image/common/logo.svg'));
+		}
+	}
+}
+//> 기본형
+
+//< 아이콘
+.ico_ {
+	// 폼
+	&form {
+		&-check {
+			position: relative;
+			width: var.$form_check_height_base;
+			height: var.$form_check_height_base;
+			border: 1px solid #b8b8b9;
+			border-radius: var.$form_borderRadius_base;
+			@include mixin.font(#cdcdcd '1.7rem/#{math.div(var.$form_check_height_base, const.$fontSize_base) * 1rem}' center);
+
+			&::before {
+				width: 10px;
+				height: 10px;
+				@include mixin.svg(#cdcdcd url('../image/common/ico_check.svg'));
+			}
+		}
+
+		// 라디오
+		&-radio#{escape('.T=circle')}::before {
+			width: 19px;
+			height: 19px;
+			@include mixin.svg(#cdcdcd url('../image/common/ico_check_circle.svg'));
+		}
+
+		// 삭제
+		&-clear::before {
+			width: 16px;
+			height: 16px;
+			@include mixin.svg(#b8b8b9 url('../image/common/ico_close_circle.svg'));
+		}
+
+		&-select::before {
+			width: 10px;
+			height: 6px;
+			@include mixin.svg(#767676 url('../image/common/ico_arrow_thick_round.svg'));
+			@include mixin.transform(rotate(180deg));
+		}
+	}
+
+	// 모달
+	&modal {
+		&-close::before {
+			width: 18px;
+			height: 18px;
+			@include mixin.svg(#4a4a4a url('../image/common/ico_close.svg'));
+		}
+	}
+
+	// 드롭다운
+	&dropdown {
+		&:not([class*="#{escape('T=')}"])::before {
+			width: 10px;
+			height: 6px;
+			@include mixin.svg(#767676 url('../image/common/ico_arrow_round.svg'));
+		}
+
+		&#{escape('.T=sm')}::before {
+			width: 9px;
+			height: 9px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_down.svg'));
+		}
+
+		&#{escape('.T=xs')}::before {
+			width: 9px;
+			height: 5px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_thick.svg'));
+		}
+	}
+
+	// 캐러셀
+	&control {
+		&-prev {
+			&:not([class*="#{escape('T=')}"])::before {
+				width: 16px;
+				height: 30px;
+				@include mixin.svg(#101010 url('../image/common/ico_arrow_left.svg'));
+			}
+
+			&#{escape('.T=thin')}::before {
+				width: 19px;
+				height: 36px;
+				@include mixin.svg(#101010 url('../image/common/ico_arrow_thin.svg'));
+				@include mixin.transform(rotate(180deg));
+			}
+		}
+
+		&-next {
+			&:not([class*="#{escape('T=')}"])::before {
+				width: 16px;
+				height: 30px;
+				@include mixin.svg(#101010 url('../image/common/ico_arrow_right.svg'));
+			}
+
+			&#{escape('.T=thin')}::before {
+				width: 19px;
+				height: 36px;
+				@include mixin.svg(#101010 url('../image/common/ico_arrow_thin.svg'));
+			}
+		}
+	}
+
+	// 모니터
+	&pc::before {
+		width: 20px;
+		height: 19px;
+		@include mixin.svg(#5c5c5c url('../image/common/ico_monitor.svg'));
+	}
+
+	// 핸드폰
+	&mobile::before {
+		width: 20px;
+		height: 19px;
+		@include mixin.svg(#5c5c5c url('../image/common/ico_phone.svg'));
+	}
+
+	// 미리보기
+	&preview::before {
+		width: 12px;
+		height: 11px;
+		@include mixin.svg(#2a2a2a url('../image/common/ico_preview.svg'));
+	}
+
+	// 저장
+	&save::before {
+		width: 12px;
+		height: 12px;
+		@include mixin.svg(#fff url('../image/common/ico_save.svg'));
+	}
+
+	// 편집하기
+	&edit::before {
+		width: 9px;
+		height: 11px;
+		@include mixin.svg(#fff url('../image/common/ico_edit.svg'));
+	}
+
+	// 템플릿
+	&template::before {
+		width: 14px;
+		height: 14px;
+		@include mixin.svg(#fff url('../image/common/ico_template.svg'));
+	}
+
+	// 조합형
+	&combine::before {
+		width: 15px;
+		height: 13px;
+		@include mixin.svg(#fff url('../image/common/ico_combine.svg'));
+	}
+
+	// 배너
+	&banner::before {
+		width: 14px;
+		height: 14px;
+		@include mixin.svg(#fff url('../image/common/ico_banner.svg'));
+	}
+
+	// 상품
+	&prod::before {
+		width: 14px;
+		height: 14px;
+		@include mixin.svg(#fff url('../image/common/ico_prod.svg'));
+	}
+
+	// 리스트
+	&list::before {
+		width: 14px;
+		height: 14px;
+		@include mixin.svg(#fff url('../image/common/ico_list.svg'));
+	}
+
+	// 혼합형
+	&mix::before {
+		width: 15px;
+		height: 14px;
+		@include mixin.svg(#fff url('../image/common/ico_mix.svg'));
+	}
+
+	// 동영상
+	&video::before {
+		width: 16px;
+		height: 16px;
+		@include mixin.svg(#fff url('../image/common/ico_video.svg'));
+	}
+
+	// 재생
+	&play::before {
+		width: 4px;
+		height: 5px;
+		@include mixin.svg(#101010 url('../image/common/ico_play.svg'));
+	}
+
+	// 확대
+	&zoom {
+		// 돋보기
+		&::before {
+			width: 15px;
+			height: 15px;
+			@include mixin.svg(#fff url('../image/common/ico_zoom.svg'));
+		}
+
+		// 확대
+		&-in::before {
+			width: 9px;
+			height: 9px;
+			@include mixin.svg(#101010 url('../image/common/ico_plus_round.svg'));
+		}
+
+		// 축소
+		&-out::before {
+			width: 9px;
+			height: 2px;
+			@include mixin.svg(#101010 url('../image/common/ico_minus.svg'));
+		}
+	}
+
+	// 휴지통
+	&remove::before {
+		width: 15px;
+		height: 19px;
+		@include mixin.svg(#fff url('../image/common/ico_trash.svg'));
+	}
+
+	// 옵션변경
+	&option::before {
+		width: 15px;
+		height: 19px;
+		@include mixin.svg(#fff url('../image/common/ico_pencil.svg'));
+	}
+
+	// 블록변경
+	&change::before {
+		width: 18px;
+		height: 13px;
+		@include mixin.svg(#fff url('../image/common/ico_change.svg'));
+	}
+
+	// 화살표
+	&arrow {
+		&-up::before {
+			width: 14px;
+			height: 17px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_tail_up.svg'));
+		}
+
+		&-down::before {
+			width: 14px;
+			height: 17px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_tail_down.svg'));
+		}
+
+		&-left::before {
+			width: 17px;
+			height: 14px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_tail_left.svg'));
+		}
+
+		&-right::before {
+			width: 17px;
+			height: 14px;
+			@include mixin.svg(#fff url('../image/common/ico_arrow_tail_right.svg'));
+		}
+	}
+
+	// 추가
+	&add::before {
+		width: 26px;
+		height: 26px;
+		@include mixin.svg(#2f3c65 url('../image/common/ico_plus.svg'));
+	}
+
+	// 닫기
+	&close::before {
+		width: 11px;
+		height: 11px;
+		@include mixin.svg(#b8b8b9 url('../image/common/ico_close.svg'));
+	}
+
+	// 초기화
+	&reset::before {
+		width: 9px;
+		height: 8px;
+		@include mixin.svg(#fff url('../image/common/ico_reset.svg'));
+	}
+
+	// 드래그
+	&cursor {
+		@include mixin.prefix(box-shadow, 0 3px 6px 0 rgba(#000, 0.16), webkit);
+		position: absolute;
+		z-index: const.$zIndex_most;
+		padding: 14px;
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		background-color: #fff;
+		pointer-events: none;
+
+		&::before {
+			width: 22px;
+			height: 22px;
+			@include mixin.svg(#16181e url('../image/common/ico_drag.svg'));
+		}
+	}
+
+	// 유료
+	&feature::before {
+		width: 16px;
+		height: 16px;
+		@include mixin.svg(#fff url('../image/common/ico_feature.svg'));
+	}
+
+	// 툴팁
+	&tooltip::before {
+		width: 15px;
+		height: 16px;
+		@include mixin.svg(#fff url('../image/common/ico_help.svg'));
+	}
+
+	&more::before {
+		width: 4px;
+		height: 8px;
+		@include mixin.svg(#fff url('../image/common/ico_arrow_right.svg'));
+	}
+
+	// 수정
+	&modify::before {
+		width: 15px;
+		height: 15px;
+		@include mixin.svg(#fff url('../image/common/ico_modify.png'));
+	}
+
+	// 선택
+	&select::before {
+		width: 9px;
+		height: 13px;
+		@include mixin.svg(#fff url('../image/common/ico_check.svg'));
+	}
+
+	// 선택
+	&link::before {
+		width: 6px;
+		height: 15px;
+		@include mixin.svg(#fff url('../image/common/ico_arrow_sm.svg'));
+	}
+}
+//> 아이콘

@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+/**
+ * 헬퍼
+ * 상속 확장 클래스
+**/
+
+
+//< 텍스트
+// 가격
+%textPrice {
+	> * {
+		vertical-align: 0;
+		@include mixin.font(v_700, -0.3px);
+
+		&:not(span)::after {// 상품리스트에서 원가표시 del이 없을경우 빈 span으로 표기
+			vertical-align: 1px;
+			font-variation-settings: 'wght' 500;
+			//content: '원';
+			content: '개';
+		}
+	}
+}
+//> 텍스트
+
+//< 버튼종류
+// 찜하기
+%btnLike {
+	padding: 10px;
+
+	&#{escape('.S=switch-on')} {
+		.ico_like::before {
+			@include mixin.svg(#f84f34 url('../image/common/ico_heart_fill.svg'));
+		}
+
+		.uico_like::before {
+			@include mixin.svg(#f84f34 url('../image/block/icon/ico_heart_fill.svg'));
+		}
+	}
+}
+//> 버튼종류

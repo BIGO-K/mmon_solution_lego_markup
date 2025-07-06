@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="템플릿" transform="translate(0 0)">
+    <g id="사각형_2845" data-name="사각형 2845" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1">
+      <rect width="14" height="14" stroke="none"/>
+      <rect x="0.5" y="0.5" width="13" height="13" fill="none"/>
+    </g>
+    <rect id="사각형_2873" data-name="사각형 2873" width="1" height="9" transform="translate(3.999 4)" fill="#fff"/>
+    <rect id="사각형_2874" data-name="사각형 2874" width="1" height="14" transform="translate(14 4) rotate(90)" fill="#fff"/>
+  </g>
+</svg>

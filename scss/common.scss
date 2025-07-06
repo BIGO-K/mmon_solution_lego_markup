@@ -1,0 +1,52 @@
+@charset 'utf-8';
+
+@use 'common/setting/const';
+@use 'common/helper/mixin';
+
+/**
+ * common
+**/
+
+//< 셋팅
+@forward 'common/setting/const';
+@forward 'common/setting/reset';
+//> 셋팅
+
+//< 컴포넌트
+@forward 'common/component/block';
+@forward 'common/component/form';
+@forward 'common/component/grid';
+@forward 'common/component/image';
+@forward 'common/component/part';
+@forward 'common/component/text';
+//> 컴포넌트
+
+//< 헬퍼
+@forward 'common/helper/function';
+@forward 'common/helper/mixin';
+//> 헬퍼
+
+
+//< font-face (마지막 파라미터 기본 값은 woff2 woff 입니다.)
+//- Pretendard
+@include mixin.font-face('PretendardVariable', const.$fontPath + 'PretendardVariable', 500, woff2 );
+
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Regular', 400);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Light', 300);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Medium', 500);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Bold', 700);
+
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Thin', 100);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-ExtraLight', 100);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-SemiBold', 000);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-ExtraBold', 900);
+// @include mixin.font-face('Pretendard', var.$fontPath + 'Pretendard-Black', 900);
+
+//- roboto
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Regular', 400);
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Thin', 100);
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Light', 300);
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Medium', 500);
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Bold', 700);
+// @include mixin.font-face('Roboto', var.$fontPath + 'Roboto-Black', 900);
+//> font-face

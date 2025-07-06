@@ -1,0 +1,165 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+/**
+* 컴포넌트
+* 드롭다운/아코디언
+* 캐러셀
+**/
+
+
+//< 드롭다운
+.mm_dropdown,
+.mui_dropdown {
+	position: relative;
+
+	.btn_dropdown {
+		position: relative;
+		width: 100%;
+
+		[class*="ico_dropdown"] {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			@include mixin.transform(translateY(-50%));
+
+			&::before {
+				@include mixin.transform(scaleY(-1));
+			}
+		}
+
+		// 드롭다운 열림
+		@include mixin.context-first('#{escape('.S=on')}') {
+			[class*="ico_dropdown"] {
+				&::before {
+					@include mixin.transform(scaleY(1));
+				}
+			}
+		}
+	}
+
+	&-item {
+		overflow: hidden;
+		height: 0;
+		@include mixin.opacity(0, none);
+
+		// 드롭다운 열림
+		#{escape('.S=on')} & {
+			@include mixin.opacity(1, auto);
+		}
+
+		&-inner {
+			position: relative;
+		}
+	}
+}
+//> 드롭다운
+
+//< 탭컨텐츠
+.mm_tab,
+.mui_tab {
+	&-item {
+		display: none;
+
+		// 탭 선택
+		&#{escape('.S=tab-on')} {
+			display: block;
+		}
+	}
+}
+//> 탭컨텐츠
+
+//< 캐러셀
+.mm_carousel,
+.mui_carousel {
+	position: relative;
+
+	&-inner {
+		overflow: hidden;
+	}
+
+	&-list {
+		position: relative;
+	}
+
+	&-item {
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		&#{escape('.S=on')} {
+			z-index: 1;
+		}
+
+		> a {
+			display: block;
+		}
+	}
+
+	// 이전, 다음
+	&-control {
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		left: 50%;
+		@include mixin.transform(translateX(-50%));
+
+		.btn_carousel-prev,
+		.btn_carousel-next {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			@include mixin.transform(translateY(-50%));
+
+			// &[disabled] {
+			// 	@include mixin.opacity(0.25);
+			// }
+		}
+
+		.btn_carousel-prev {
+			left: 0;
+		}
+
+		.btn_carousel-next {
+			right: 0;
+		}
+	}
+
+	// 페이지네이션
+	&-pagination {
+		position: absolute;
+		z-index: 2;
+		left: 50%;
+		bottom: 0;
+		@include mixin.font('0', nowrap);
+		@include mixin.transform(translateX(-50%));
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	// 페이저
+	&-count {
+		position: absolute;
+		z-index: 2;
+
+		.text_carousel-index {
+			//
+		}
+
+		> i {
+			margin: 0 4px;
+			@include mixin.opacity(0.3);
+		}
+
+		.text_carousel-total {
+			@include mixin.opacity(0.3);
+		}
+	}
+}
+//> 캐러셀

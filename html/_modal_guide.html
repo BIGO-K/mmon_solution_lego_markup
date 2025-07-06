@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<!-- <link rel='shortcut icon' href=""> -->
+
+	<!-- 소셜태그 -->
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<!--// 소셜태그 -->
+
+	<title>M.Mon solution LEGO</title>
+
+	<!-- 공통 css -->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- (D) 폴리필/라이브러리는 요청을 줄이기 위해 combind + minify를 적용해주세요. -->
+	<!-- 폴리필/라이브러리 스크립트 -->
+	<script src="../js/lib/lodash-4.17.21.min.js"></script>
+	<script src="../js/lib/gsap-3.6.1/gsap.min.js"></script>
+	<script src="../js/lib/axios-0.25.0.min.js"></script>
+	<script src="../js/lib/load-image.all-5.14.0.min.js"></script>
+	<script src="../js/lib/sortable-1.13.0.min.js"></script>
+
+	<!-- 공통 선언 스크립트 -->
+	<script src="../js/app_common.js"></script>
+	<script src="../js/app_page-common.js"></script>
+
+	<!-- (D) 페이지 공통 스크립트는 body 하단, 전용 스크립트는 .mm_page-content 하단에 넣어주세요. -->
+</head>
+<body>
+	<div id="mm_app" class="mm_app">
+		<!-- 화면 -->
+		<div class="mm_view">
+			<!-- 내용 -->
+			<div id="mm_body" class="mm_page">
+				<!-- 본문 -->
+
+				<!-- (D) 실제 내용을 추가하는 부분입니다. -->
+				<div class="m_lego">
+					<!-- 사이드바 -->
+					<!--
+						(D) 사이드바
+							1. gnb
+						 	 - 선택한 메뉴에 해당하는 '.m_lego-gnb > button' 태그와 '.m_lego-block-list' 태그에 'S=gnb-on' 클래스를 추가합니다.
+							 - 블록 리스트에 확대보기 버튼(btn_zoom) 클릭 시 'm_lego-block-modal' 영역을 노출합니다.
+							 - 블록 드래그할 때 블록 리스트에 있는 해당 이미지(image_block)에 'S=image_ghost' 클래스를 추가합니다.
+							 - 드래그 중인 이미지(image_block)에는 'S=image_dragging' 클래스를 추가합니다. (최하단에 샘플코드)
+
+							2. 사이드바 팝업
+							 - 블록 변경 및 블록 옵션변경 버튼 클릭 시 '.m_lego-sidebar-popup' 영역을 노출합니다.
+							 - 블록 변경 팝업에서 'm_lego-block-list'는 gnb의 블록 리스트와 동일한 구조를 사용합니다.
+					-->
+					<div class="m_lego-sidebar">
+						<!-- GNB -->
+						<div class="mm_scroller m_lego-gnb">
+							<!-- (D) 선택한 메뉴에 해당하는 button 태그에 'S=gnb-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+							<ul>
+								<li>
+									<button type="button" class="S=gnb-on" name="banner" title="선택됨" data-gnb="{ '_group': '.m...block-banner'}"><i class="ico_banner"></i><b>배너</b></button>
+									<div class="mm_tooltip">
+										<button type="button" class="btn_tooltip" title="선택됨"><i class="ico_tooltip"></i></button>
+										<div class="mm_tooltip-inner">
+											<p>배너는 세로 기준 5단계로 제작되었으며, 옵션 변경 시 높이 선택이 가능 합니다.</p>
+										</div>
+									</div>
+								</li>
+								<li><button type="button" name="product"><i class="ico_prod"></i><b>상품</b></button></li>
+								<!-- <li><button type="button" disabled><i class="ico_video"></i><b>동영상</b></button></li> -->
+								<li><button type="button" name="mixed"><i class="ico_mix"></i><b>혼합형</b></button></li>
+								<li>
+									<button type="button" name="combine"><i class="ico_combine"></i><b>조합형</b></button>
+									<div class="mm_tooltip">
+										<button type="button" class="btn_tooltip" title="선택됨"><i class="ico_tooltip"></i></button>
+										<div class="mm_tooltip-inner">
+											<p>조합된 각 블록 별로 타이틀을 설정할 수 있으며, 별도의 어드민에 관리 페이지가 생성됩니다.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<button type="button" name="feature"><i class="ico_feature"></i><b>유료</b></button>
+									<div class="mm_tooltip">
+										<button type="button" class="btn_tooltip" title="선택됨"><i class="ico_tooltip"></i></button>
+										<div class="mm_tooltip-inner">
+											<p>어드민 세팅 없이 자동 생성되며, 블록 외 별도 페이지가 있는 블록입니다.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="m_lego-gnb-block">
+								<!-- (D) 선택한 메뉴에 해당하는 '.m_lego-block-list' 태그에 'S=gnb-on' 클래스를 추가합니다. -->
+								<div class="m_lego-block-list">
+									<!-- 상단 분류 선택 -->
+									<div class="mm_dropdown" data-dropdown>
+										<button type="button" class="btn_dropdown" title="펼쳐보기"><b>전체</b><i class="ico_dropdown"></i></button>
+										<div class="mm_dropdown-item">
+											<div class="mm_dropdown-item-inner">
+												<div class="mm_scroller">
+													<ul>
+														<!-- (D) 현재 페이지에 해당하는 a태그에 'S=page-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+														<!-- <li><a href="javascript:void(0);" name="all"><b>전체</b></a></li> -->
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--// 상단 분류 선택 -->
+								</div>
+							</div>
+						</div>
+						<!--// GNB -->
+
+						<!-- 사이드바 팝업 -->
+						<!-- (D) 팝업이 열릴 때 'm_lego-sidebar-popup'에 'S=popup-on' 클래스를 추가합니다. -->
+						<div class="m_lego-sidebar-popup">
+							<!-- 변경 가능한 블록 -->
+							<div class="m...popup-item m...popup-block">
+								<div class="m...popup-item-header">
+									<h2><b>변경 가능한 블록</b></h2>
+									<button type="button" class="btn_close"><b class="mm_ir-blind">닫기</b><i class="ico_close"></i></button>
+								</div>
+								<div class="m...popup-item-body">
+									<div class="mm_scroller">
+										<!-- 블록 리스트 -->
+										<div class="m_lego-block-list"></div>
+										<!--// 블록 리스트 -->
+									</div>
+								</div>
+							</div>
+							<!--// 변경 가능한 블록 -->
+
+							<!-- 블록 옵션변경 -->
+							<div class="m...popup-item m...popup-option T=bg-white">
+								<div class="m...popup-item-header">
+									<h2><b>옵션 변경</b></h2>
+									<button type="button" class="mm_btn T=2xs T=round T=dark btn_reset"><i class="ico_reset"></i><b>초기화</b></button>
+									<button type="button" class="btn_close"><b class="mm_ir-blind">닫기</b><i class="ico_close"></i></button>
+								</div>
+								<div class="m...popup-item-body">
+									<div class="mm_scroller">
+										<!-- 블록명 -->
+										<section class="m...popup-option-block">
+											<h6 class="mm_text-label"><b>블록명</b></h6>
+											<div class="mm_form-text">
+												<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+												<label>
+													<input type="text" class="textfield" data-text><i class="bg_text"></i>
+													<span class="text_placeholder">어드민에 표시할 명칭을 입력하세요</span>
+												</label>
+											</div>
+										</section>
+										<!--// 블록명 -->
+
+										<!-- 타이틀 사용 여부 -->
+										<!-- (D) 조합형 블록의 컨테이너(m...canvas-container)의 옵션 변경 시에는 옵션의 타이틀 사용 여부 영역을 노출하지 않습니다. -->
+										<section class="m...popup-option-title">
+											<h6 class="mm_text-label"><b>타이틀 사용 여부</b></h6>
+											<label class="mm_form-check T=switch">
+												<input type="checkbox" name="dev_check-title" data-check="{ 'syncer': '.mm_syncer-title' }">
+												<b class="mm_block">
+													<i class="ico_form-check"></i>
+													<span class="mm_ir-blind text_label">타이틀 사용 여부</span>
+												</b>
+											</label>
+											<div class="mm_syncer-title">
+												<h6 class="mm_text-label"><b>메인 타이틀</b></h6>
+												<div class="mm_form-text m...title-main">
+													<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+													<label>
+														<input type="text" class="textfield" data-text><i class="bg_text"></i>
+														<span class="text_placeholder">메인 타이틀을 입력하세요</span>
+													</label>
+												</div>
+												<h6 class="mm_text-label"><b>서브 타이틀</b></h6>
+												<div class="mm_form-text m...title-sub">
+													<button type="button" class="btn_text-clear"><i class="ico_form-clear"></i><b class="mm_ir-blind">지우기</b></button>
+													<label>
+														<input type="text" class="textfield" data-text><i class="bg_text"></i>
+														<span class="text_placeholder">서브 타이틀을 입력하세요</span>
+													</label>
+												</div>
+												<h6 class="mm_text-label"><b>정렬</b></h6>
+												<div class="mm_radio-list m...title-sub-align">
+													<ul>
+														<li>
+															<label class="mm_form-radio">
+																<input type="radio" name="dev_radio-align" data-radio value="left" checked>
+																<b class="mm_block">
+																	<i class="ico_align"></i>
+																	<span class="mm_ir-blind text_label">좌측 정렬</span>
+																</b>
+															</label>
+														</li>
+														<li>
+															<label class="mm_form-radio">
+																<input type="radio" name="dev_radio-align" data-radio value="center">
+																<b class="mm_block">
+																	<i class="ico_align"></i>
+																	<span class="mm_ir-blind text_label">중앙 정렬</span>
+																</b>
+															</label>
+														</li>
+														<li>
+															<label class="mm_form-radio">
+																<input type="radio" name="dev_radio-align" data-radio value="right">
+																<b class="mm_block">
+																	<i class="ico_align"></i>
+																	<span class="mm_ir-blind text_label">우측 정렬</span>
+																</b>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</section>
+										<!--// 타이틀 사용 여부 -->
+
+										<!-- 배너 높이 -->
+										<!-- (D) 조합형 블록의 컨테이너(m...canvas-container)의 옵션 변경 시에는 배너 높이 영역을 노출하지 않습니다. -->
+										<section class="m...popup-option-size">
+											<h6 class="mm_text-label"><b>배너 높이</b></h6>
+											<div class="mm_tooltip">
+												<button type="button" class="btn_tooltip" title="선택됨"><i class="ico_tooltip"></i></button>
+												<div class="mm_tooltip-inner">
+													<p>배너는 세로 기준 5단계로 제작되었으며, 높이 선택이 가능합니다.</p>
+												</div>
+											</div>
+											<div class="mm_radio-list">
+												<!-- <ul>
+													<li>
+														<label class="mm_form-radio">
+															<input type="radio" name="dev_radio-banner-size" data-radio>
+															<b class="mm_block">
+																<i class="ico_form-radio"></i>
+																<span class="text_label">XS</span>
+															</b>
+														</label>
+													</li>
+													<li>
+														<label class="mm_form-radio">
+															<input type="radio" name="dev_radio-banner-size" data-radio>
+															<b class="mm_block">
+																<i class="ico_form-radio"></i>
+																<span class="text_label">S</span>
+															</b>
+														</label>
+													</li>
+													<li>
+														<label class="mm_form-radio">
+															<input type="radio" name="dev_radio-banner-size" data-radio>
+															<b class="mm_block">
+																<i class="ico_form-radio"></i>
+																<span class="text_label">M(기본)</span>
+															</b>
+														</label>
+													</li>
+													<li>
+														<label class="mm_form-radio">
+															<input type="radio" name="dev_radio-banner-size" data-radio>
+															<b class="mm_block">
+																<i class="ico_form-radio"></i>
+																<span class="text_label">L</span>
+															</b>
+														</label>
+													</li>
+													<li>
+														<label class="mm_form-radio">
+															<input type="radio" name="dev_radio-banner-size" data-radio>
+															<b class="mm_block">
+																<i class="ico_form-radio"></i>
+																<span class="text_label">XL</span>
+															</b>
+														</label>
+													</li>
+												</ul> -->
+											</div>
+										</section>
+										<!--// 배너 높이 -->
+									</div>
+								</div>
+								<div class="m...popup-item-foot">
+									<button type="button" class="mm_btn T=lg T=primary btn_apply"><b>적용하기</b></button>
+								</div>
+							</div>
+							<!--// 블록 옵션변경 -->
+						</div>
+						<!--// 사이드바 팝업 -->
+					</div>
+					<!--// 사이드바 -->
+
+					<!-- 블록 조합 영역 -->
+					<!--
+						(D) 블록 조합 영역
+							1. 캔버스 (m_lego-build-canvas)
+							 - 'm_lego-build-info > m...info-device'에서 선택한 디바이스에 맞는 pc/mo 캔버스에 'S=canvas-on' 클래스가 추가됩니다.
+
+							2. 딤 (m...canvas-dim)
+							 - 딤은 블록변경, 옵션변경, 블록 드래그 시 노출합니다.
+							 - S=dim-on 클래스 추가 시 노출됩니다
+
+							3. 컨테이너 (m...canvas-container)
+							 - 컨테이너 안에 블록이 없으면 'T=container-empty' 클래스를 추가합니다.
+							 - full 사이즈 블록은 컨테이너에 'S=container-full' 클래스를 추가합니다.
+							 - 해당 컨테이너 내부의 블록을 변경하고 있을 때는 컨테이너에 'S=on' 클래스를 추가합니다.
+							 - 컨테이너 안 블록이 1개일 경우 컨테이너와 블록의 컨트롤러를 1개로 사용합니다. (블록 하단이 아닌 컨테이너 우측에 위치)
+
+							4. 블록 (m...canvas-block)
+							 - 블록 컨트롤러에는 'T=controller-horizontal' 클래스를 추가합니다.
+					-->
+					<div class="m_lego-build">
+						<div class="mm_scroller T=xy">
+							<!-- 상단 플로팅 영역 -->
+							<div class="m_lego-build-floating">
+								<button type="button" class="btn_template"><i class="ico_template"></i><b>템플릿 만들기</b></button>
+								<!-- 템플릿 선택 -->
+								<div class="m_lego-template">
+									<div class="mm_scroller">
+										<h2><b>템플릿 선택</b></h2>
+										<p>찾으시는 유형의 템플릿을 선택하여 쉽고 빠르게 편집해보세요</p>
+										<div class="mm_tab" data-tab>
+											<div class="mm_tab_menu">
+												<!-- (D) 선택된 탭메뉴에 'S=tab-on' 클래스와 '선택됨' 타이틀이 추가됩니다. -->
+												<ul>
+													<li><a class="btn_tab S=tab-on" href="javascript:void(0);" title="선택됨"><b>내가 만든 템플릿</b></a></li>
+													<li><a class="btn_tab" href="javascript:void(0);"><b>엠몬 템플릿</b></a></li>
+												</ul>
+											</div>
+											<div class="mm_tab-item m_lego-template-user S=tab-on">
+												<div class="m_lego-template-empty">
+													<p>내가 만든 템플릿이 없다면<br>템플릿과 블록을 사용하여 나만의 템플릿을 만들어보세요</p>
+													<div class="mm_btn_box">
+														<a class="mm_btn T=xl T=line T=primary btn_create" href="javascript:void(0);"><b>템플릿 만들기</b><i class="ico_link"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="mm_tab-item">
+												<div class="m_lego-template-list">
+													<ul>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_1.jpg' }"></i>
+															<b>템플릿 0001</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_2.jpg' }"></i>
+															<b>템플릿 0002</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_3.jpg' }"></i>
+															<b>템플릿 0003</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_4.jpg' }"></i>
+															<b>템플릿 0004</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_5.jpg' }"></i>
+															<b>템플릿 0005</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_9.jpg' }"></i>
+															<b>템플릿 0006</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_8.jpg' }"></i>
+															<b>템플릿 0007</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+														<li>
+															<i class="mm_bg-cover image_template" data-lazyload="{ '_src': '../image/_sample/pc/template_6.jpg' }"></i>
+															<b>템플릿 0008</b>
+															<div class="mm_btn_box">
+																<button type="button" class="mm_btn T=line T=round"><i class="ico_select"></i><b>선택하기</b></button>
+																<a class="mm_btn T=line T=round" href="javascript:void(0);"><i class="ico_preview"></i><b>미리보기</b></a>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button type="button" class="btn_close"><b class="mm_ir-blind">닫기</b><i class="ico_modal-close"></i></button>
+								</div>
+								<!--// 템플릿 선택 -->
+							</div>
+							<!--// 상단 플로팅 영역 -->
+
+							<!-- 페이지 -->
+							<div class="m_lego-build-page">
+								<!-- PC 캔버스 -->
+								<div class="m_lego-build-canvas T=canvas-pc S=canvas-on">
+									<!-- dim -->
+									<!-- (D) 딤 노출할 때 m...canvas-dim 영역에 'S=dim-on' 클래스를 추가합니다. -->
+									<div class="m...canvas-dim"></div>
+									<!--// dim -->
+
+									<!-- 캔버스 헤더 -->
+									<div class="m...canvas-header"></div>
+									<!--// 캔버스 헤더 -->
+
+									<!-- 캔버스 바디 -->
+									<div class="m...canvas-body">
+										<!-- 컨테이너 -->
+										<!-- (D) 캔버스에 컨테이너가 한 개도 없을 경우 -->
+										<div class="m...canvas-container T=container-empty">
+											<p>왼쪽 메뉴에서 블록을 선택<br> 또는 템플릿을 사용하여 페이지를 만들어보세요</p>
+										</div>
+										<!--// 컨테이너 -->
+
+										<!-- 컨테이너 -->
+										<!-- (D) 사이드바에서 블록 드래그할 때 위치 표시용 -->
+										<!-- <div class="m...canvas-container T=container-guide"></div> -->
+										<!--// 컨테이너 -->
+									</div>
+									<!--// 캔버스 바디 -->
+
+									<!-- 캔버스 푸터 -->
+									<div class="m...canvas-footer"></div>
+									<!--// 캔버스 푸터 -->
+								</div>
+								<!--// PC 캔버스 -->
+
+								<!-- mobile 캔버스 -->
+								<div class="m_lego-build-canvas T=canvas-mobile">
+									<!-- dim -->
+									<!-- (D) 딤 노출할 때 m...canvas-dim 영역에 'S=dim-on' 클래스를 추가합니다. -->
+									<div class="m...canvas-dim"></div>
+									<!--// dim -->
+
+									<!-- 캔버스 헤더 -->
+									<div class="m...canvas-header"></div>
+									<!--// 캔버스 헤더 -->
+
+									<!-- 캔버스 바디 -->
+									<div class="m...canvas-body"></div>
+									<!--// 캔버스 바디 -->
+
+									<!-- 캔버스 푸터 -->
+									<div class="m...canvas-footer"></div>
+									<!--// 캔버스 푸터 -->
+
+									<!-- 캔버스 툴바 -->
+									<div class="m...canvas-toolbar"></div>
+									<!--// 캔버스 툴바 -->
+								</div>
+								<!-- mobile 캔버스 -->
+							</div>
+							<!--// 페이지 -->
+						</div>
+						<!-- 블록조합 하단 영역 -->
+						<div class="m_lego-build-info">
+							<div class="mm_lside">
+								<div class="m...info-page">
+									<b>페이지 선택</b>
+									<div class="mm_dropdown" data-dropdown>
+										<button type="button" class="btn_dropdown" title="펼쳐보기"><b>메인</b><i class="ico_dropdown T=xs"></i></button>
+										<div class="mm_dropdown-item">
+											<div class="mm_dropdown-item-inner">
+												<div class="mm_scroller">
+													<ul>
+														<!-- (D) 현재 페이지에 해당하는 a태그에 'S=page-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+														<li><a href="javascript:void(0);"><b>메인</b></a></li>
+														<!-- <li><a href="javascript:void(0);"><b>브랜드샵</b></a></li>
+														<li><a href="javascript:void(0);"><b>판매자샵</b></a></li>
+														<li><a href="javascript:void(0);"><b>카테고리 메인</b></a></li> -->
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="text_template">무제 &#45; 2023년 4월 5일 <a class="btn_modify" href="_modal_templateModify.html"><i class="ico_modify"></i><b class="mm_ir-blind">편집</b></a></p>
+							</div>
+							<div class="m...info-device">
+								<ul>
+									<!-- (D) 선택된 메뉴에 'S=device-on' 클래스와 '선택됨' 타이틀을 추가합니다. -->
+									<li><button type="button" class="btn_device-pc S=device-on" title="선택됨"><i class="ico_pc"></i><b class="mm_ir-blind">PC 전환</b></button></li>
+									<li><button type="button" class="btn_device-mobile"><i class="ico_mobile"></i><b class="mm_ir-blind">MOBILE 전환</b></button></li>
+								</ul>
+							</div>
+							<div class="mm_rside">
+								<!-- 총 비용 -->
+								<div class="m...info-price">
+									<p class="text_price"><button type="button" class="btn_total-price" data-switch="{ '_isParent': true }"><b>총 비용</b><i class="ico_more"></i></button><strong>0</strong></p>
+									<div class="m...info-price-detail">
+										<h5><b>선택한 유료항목</b></h5>
+										<div class="mm_scroller"></div>
+										<dl>
+											<dt>총 비용</dt>
+											<dd><p class="text_price"><strong>0</strong></p></dd>
+										</dl>
+										<div class="mm_note">
+											<ul>
+												<li>상세 기능 및 커스터마이징 견적은 컨설팅으로 진행하 실 수 있습니다.</li>
+											</ul>
+										</div>
+										<button type="button" class="btn_close" onclick="mm.switch.toggle(this.closest('.m\\.\\.\\.info-price-detail').previousElementSibling)"><i class="ico_close"></i><b class="mm_ir-blind">닫기</b></button>
+									</div>
+								</div>
+								<!--// 총 비용 -->
+								<div class="mm_btn_box">
+									<button type="button" class="mm_btn T=lightest btn_preview"><i class="ico_preview"></i><b>미리보기</b></button>
+									<div class="mm_dropdown" data-dropdown>
+										<button type="button" class="mm_btn T=primary btn_dropdown" title="펼쳐보기"><i class="ico_save"></i><b>저장하기</b></button>
+										<div class="mm_dropdown-item">
+											<div class="mm_dropdown-item-inner">
+												<ul>
+													<li><button type="button" class="btn_save-new"><b>새로 저장</b></button></li>
+													<li><button type="button" class="btn_save"><b>저장</b></button></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 블록조합 하단 영역 -->
+
+						<!-- 블록 확대보기 -->
+						<div class="m_lego-block-modal">
+							<div class="m...modal-dim"></div>
+							<div class="m...modal-item">
+								<p class="text_title"></p>
+								<div class="mm_scroller">
+									<i class="image_block"></i>
+								</div>
+								<div class="mm_foot">
+									<div class="mm_btn_box">
+										<button type="button" class="mm_btn T=lg btn_close"><b>닫기</b></button>
+										<button type="button" class="mm_btn T=lg T=primary btn_add"><b>적용하기</b></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--// 블록 확대보기 -->
+
+						<!-- (D) 드래그 중인 블록 샘플 -->
+						<!-- <i class="image_block S=image_dragging"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload="{ '_src': '../image/_sample/pc/banner_1920x673_1.png' }" alt=""></i> -->
+
+						<!-- (D) 드래그 시 마우스 커서 -->
+						<!-- <i class="ico_cursor"></i> -->
+					</div>
+					<!--// 블록 조합 영역 -->
+				</div>
+
+				<!-- 현재 페이지 스크립트 -->
+				<script src="../js/app_page-lego.js"></script>
+				<script>
+					// 현재 사용된 블록명(mui) 가져오기
+					function getUseBlock() {
+
+						var $lego = mm.find('.m_lego')[0];
+						var $canvases = mm.find('.m_lego-build-canvas', $lego);
+						var block = {
+							pc: [], // pc에 사용된 블록
+							mobile: [] // 모바일에 사용된 블록
+						};
+
+						for (const __$canvas of $canvases) {
+							var $containers = mm.find('.m\\.\\.\\.canvas-container', __$canvas);
+							var _device = __$canvas.classList.contains('T=canvas-pc') ? 'pc' : 'mobile';
+
+							_.forEach($containers, function (__$container) {
+
+								var data = mm.data.get(__$container, 'data-block');
+								if (_device === 'mobile') data = globalBlocks.mobile[data.type].filter(__block => __block.match_id === data.mobile.block)[0];
+
+								if (data.block.length > 1) {
+									var array = [];
+									for (var _i = 0; _i < data[_device].block.length; _i++) {
+										array.push(data[_device].block[_i].id);
+									}
+
+									block[_device].push(array);
+								}
+								else block[_device].push(data.block[0].mui_id);
+
+							});
+						}
+
+						return block;
+
+					}
+
+					const globalGnbBlocks = {}; // GNB 블록 리스트 전역변수
+					const globalBlocks = {}; // 블록 전역변수
+					Promise.all([fetch('../json/block.json'), fetch('../json/block_pc.json'), fetch('../json/block_mobile.json')])
+					.then(async([__grid, __pc, __mobile]) => { return [await __grid.json(), await __pc.json(), await __mobile.json()] })
+					.then((__response) => {
+
+						globalBlocks.header = __response[0].header;
+						globalBlocks.footer = __response[0].footer;
+						globalBlocks.toolbar = __response[0].toolbar;
+						globalBlocks.pc = __response[1];
+						globalBlocks.mobile = __response[2];
+
+						Object.freeze(globalBlocks);
+						setBlockInit();
+						sidebar.setBlockList();
+
+					}).catch((err) => { console.log(err); });
+
+					// 블록 초기 세팅
+					function setBlockInit() {
+
+						var $lego = mm.find('.m_lego')[0];
+						var $canvas = mm.find('.m_lego-build-canvas', $lego);
+
+						var _classCanvas = 'S=canvas-on';
+
+						var $currentCanvas = _.filter($canvas, function (__$canvas) { return __$canvas.classList.contains(_classCanvas) })[0];
+						var $sidebar = mm.find('.m_lego-sidebar', $lego)[0];
+						var $gnbBlock = mm.find('.m_lego-gnb-block', $sidebar)[0];
+
+						var _device = $currentCanvas.classList.contains('T=canvas-pc') ? 'pc' : 'mobile';
+
+						// 캔버스 헤더, 푸터
+						var templateHtml = mm.string.template([
+							'<p class="text_block"></p>',
+							'<i><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-lazyload alt=""></i>'
+						]);
+						_.forEach($canvas, function (__$canvas) {
+
+							var _device = __$canvas.classList.contains('T=canvas-pc') ? 'pc' : 'mobile';
+							var $header = mm.find('.m\\.\\.\\.canvas-header', __$canvas)[0];
+							var $footer = mm.find('.m\\.\\.\\.canvas-footer', __$canvas)[0];
+							var $toolbar = mm.find('.m\\.\\.\\.canvas-toolbar', __$canvas)[0];
+
+							for (const $target of [$header, $footer, $toolbar]) {
+								if (!$target) continue;
+
+								$target.innerHTML = templateHtml;
+								var _type = ($target === $header) ? 'header' : ($target === $footer) ? 'footer' : 'toolbar';
+
+								mm.find('.text_block', $target)[0].innerText = ($target === $header) ? '헤더' : ($target === $footer) ? '푸터' : '툴바';
+								mm.element.attribute(mm.find('> i > img', $target)[0], { 'data-lazyload': { _src: globalBlocks[_type][0][_device].thumbnail }});
+
+								if (_device === 'pc' || $target === $toolbar) {
+									var $controller = mm.element.create(mm.string.template([
+										'<ul class="m_lego-controller">',
+											'<li><button type="button" class="btn_block-change"><i class="ico_change"></i><b>변경</b></button></li>',
+										'</ul>',
+									]));
+									mm.element.append($target, $controller);
+
+									$target.setAttribute('data-block', '');
+									var option = {
+										mui_id: globalBlocks[_type][0].mui_id,
+										replace: globalBlocks[_type]
+									}
+									mm.data.set($target, 'data-block', { initial: option });
+								}
+							}
+
+						});
+
+						mm.lazyload.update($lego);
+
+					}
+				</script>
+				<!--// 본문 -->
+			</div>
+			<!--// 내용 -->
+		</div>
+		<!--// 화면 -->
+
+		<!-- 모달 -->
+		<!--
+			(D) 모달이 생성될 때 html 태그에 S=noscroll 클래스를 추가합니다.
+			현재 모달에 해당하는 mm_modal-item에 S=on 클래스를, 이전 모달은 S=old 클래스를 추가합니다.
+			모달 스타일 변경을 위한 페이지 클래스는 mm_modal-item에 추가합니다.
+		-->
+		<div class="mm_modal">
+			<div class="mm_modal-items">
+				<!-- 모달 아이템 -->
+				<div class="mm_modal-item m_modal-lego-guide S=on">
+					<div class="mm_modal-item-dim"></div>
+					<div class="mm_modal-item-inner">
+						<div class="mm_modal...content">
+							<div class="mm_scroller">
+								<!-- 가이드 step -->
+								<div class="mm_carousel" data-carousel="{ '_effect': 'fade' }">
+									<div class="mm_carousel-inner">
+										<ol class="mm_carousel-list">
+											<li class="mm_carousel-item">
+												<figure>
+													<i class="image_step" data-lazyload="{ '_src': '../image/content/pc/block_guide_1.jpg' }"></i>
+													<figcaption>
+														<p class="text_step"><strong>블록으로 페이지를 만들어보세요</strong>왼쪽에 나열된 블록을 클릭 또는 드래그앤드롭으로<br> 페이지를 구성할 수 있습니다.</p>
+														<button type="button" class="mm_btn T=lg T=line T=primary" onclick="mm.event.dispatch('.btn_carousel-next', 'click')"><b>다음</b><i class="ico_more"></i></button>
+													</figcaption>
+												</figure>
+											</li>
+											<li class="mm_carousel-item">
+												<figure>
+													<i class="image_step" data-lazyload="{ '_src': '../image/content/pc/block_guide_2.jpg' }"></i>
+													<figcaption>
+														<p class="text_step"><strong>어려울 때는 템플릿을 선택해보세요</strong>제공하는 템플릿을 선택하여<br> 쉽게 페이지를 만들 수 있습니다.</p>
+														<button type="button" class="mm_btn T=lg T=line T=primary" onclick="mm.event.dispatch('.btn_carousel-next', 'click')"><b>다음</b><i class="ico_more"></i></button>
+													</figcaption>
+												</figure>
+											</li>
+											<li class="mm_carousel-item">
+												<figure>
+													<i class="image_step" data-lazyload="{ '_src': '../image/content/pc/block_guide_3.jpg' }"></i>
+													<figcaption>
+														<p class="text_step"><strong>블록의 위치와 옵션을 변경해보세요</strong>페이지에 있는 블록을 선택하면<br> 블록을 수정, 삭제, 이동을 할 수 있습니다.</p>
+														<button type="button" class="mm_btn T=lg T=line T=primary" onclick="mm.event.dispatch('.btn_carousel-next', 'click')"><b>다음</b><i class="ico_more"></i></button>
+													</figcaption>
+												</figure>
+											</li>
+											<li class="mm_carousel-item">
+												<figure>
+													<i class="image_step" data-lazyload="{ '_src': '../image/content/pc/block_guide_4.jpg' }"></i>
+													<figcaption>
+														<p class="text_step"><strong>모바일 화면도 확인해보세요</strong>모바일 탭에서는 PC 블록을 기준으로 정리된 페이지를 확인할 수 있고,<br> 모바일 블록을 선택하면 블록 UI를 변경할 수 있습니다.</p>
+														<button type="button" class="mm_btn T=lg T=line T=primary" onclick="mm.event.dispatch('.btn_carousel-next', 'click')"><b>다음</b><i class="ico_more"></i></button>
+													</figcaption>
+												</figure>
+											</li>
+											<li class="mm_carousel-item">
+												<figure>
+													<i class="image_step" data-lazyload="{ '_src': '../image/content/pc/block_guide_5.jpg' }"></i>
+													<figcaption>
+														<p class="text_step"><strong>완성된 페이지를 저장해보세요</strong>나만의 템플릿으로 저장하여 관리할 수 있고<br> 선택한 템플릿을 신청하여 쇼핑몰에 추가할 수 있습니다.</p>
+														<button type="button" class="mm_btn T=lg T=primary"><b>시작하기</b></button>
+													</figcaption>
+												</figure>
+											</li>
+										</ol>
+									</div>
+									<div class="mm_carousel-control">
+										<button type="button" class="btn_carousel-prev"><i class="ico_control-prev T=thin"></i><b class="mm_ir-blind">이전</b></button>
+										<button type="button" class="btn_carousel-next"><i class="ico_control-next T=thin"></i><b class="mm_ir-blind">다음</b></button>
+									</div>
+									<div class="mm_carousel-pagination">
+										<ol>
+											<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">1</b></button></li>
+											<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">2</b></button></li>
+											<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">3</b></button></li>
+											<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">4</b></button></li>
+											<li><button type="button" class="btn_carousel-page"><b class="mm_ir-blind">5</b></button></li>
+										</ol>
+									</div>
+								</div>
+								<!--// 가이드 step -->
+							</div>
+							<button type="button" class="btn_modal-close"><b class="mm_ir-blind">모달 닫기</b><i class="ico_modal-close"></i></button>
+						</div>
+					</div>
+				</div>
+				<!--// 모달 아이템 -->
+			</div>
+		</div>
+		<!--// 모달 -->
+	</div>
+</body>
+</html>

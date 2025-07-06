@@ -1,0 +1,149 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+* 컴포넌트
+* 드롭다운/아코디언
+* 캐러셀
+**/
+
+
+//< 캐러셀
+.mm_carousel {
+	&-inner {
+		// * 좌/우 padding은 inner에 적용
+	}
+
+	&-list {
+		// padding-top: %;// item이 absolute로 높이는 %로 지정
+		// * _isAutoHeight: true 이면, 높이는 padding-top 대신 height로 하고 overflow: hidden; 필요에 따라 적용 필요
+	}
+
+	&-item {
+		background-color: #fff;
+		// * margin 대신 padding 으로 적용
+
+		figcaption {
+			visibility: hidden;
+
+			#{escape('.S=ready')} & {
+				visibility: inherit;
+			}
+		}
+	}
+
+	// 이전, 다음
+	&-control {
+		// &#{escape('.T=control_')} {
+
+		// }
+	}
+
+	// 페이지네이션
+	&-pagination {
+		// 불릿형
+		.btn_carousel-page {
+			border-radius: 100%;
+			background-color: #000;
+			@include mixin.opacity(0.2);
+			@include mixin.transition(opacity const.$time_fast);
+
+			&#{escape('.S=on')} {
+				@include mixin.opacity(1);
+			}
+		}
+	}
+
+	// 페이저
+	&-count {
+		.text_carousel-index {
+			//
+		}
+
+		.text_carousel-total {
+			//
+		}
+	}
+
+	// 프로그래스 바
+	&-progress {
+		position: absolute;
+		z-index: 2;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		background-color: #e6e6e6;
+
+		&-bar {
+			height: 100%;
+			background-color: #101010;
+			@include mixin.transition(width const.$time_base);
+		}
+	}
+}
+//> 캐러셀
+
+//< 툴팁
+.mm_tooltip {
+	position: relative;
+
+	.btn_tooltip {
+		position: relative;
+
+		&:hover {
+			+ .mm_tooltip-inner {
+				z-index: const.$zIndex_floating;
+				@include mixin.opacity(1, auto);
+			}
+		}
+
+		&::after {
+			position: absolute;
+			top: -3px;
+			right: -3px;
+			bottom: -3px;
+			left: -3px;
+			content: '';
+		}
+
+		.ico_tooltip::before {
+			background-color: #dea83b;
+		}
+	}
+
+	&-inner {
+		position: absolute;
+		top: 18px;
+		left: 0;
+		padding: 5px 8px 4px;
+		width: 0;
+		border: 1px solid #101010;
+		background-color: #fff;
+		@include mixin.opacity(0, none);
+		@include mixin.font('1.2rem/1.5rem');
+
+		.btn_close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 6px;
+
+			&:hover {
+				background-color: inherit;
+			}
+
+			.ico_close::before {
+				width: 10px;
+				height: 10px;
+				background-color: #4a4a4a;
+			}
+		}
+	}
+}
+//> 툴팁

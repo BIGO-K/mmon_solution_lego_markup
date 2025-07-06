@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="유료" transform="translate(1 0.901)">
+    <g id="타원" transform="translate(-1 -0.901)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="8" cy="8" r="8" stroke="none"/>
+      <circle cx="8" cy="8" r="7.5" fill="none"/>
+    </g>
+    <path id="패스" d="M.224-7.779H1.371L2.826-1.7H2.9L4.425-7.779H5.606L7.129-1.7H7.2L8.656-7.779H9.8L7.783,0H6.6L5.044-5.952H4.983L3.438,0H2.249ZM.213-4.345h9.6v.912H.213Z" transform="translate(2 11.099)" fill="#fff"/>
+  </g>
+</svg>

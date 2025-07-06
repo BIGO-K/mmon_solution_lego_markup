@@ -1,0 +1,71 @@
+@charset 'utf-8';
+
+/**
+ * 셋팅
+ * 전역변수
+**/
+
+
+//< 그리드
+// container
+$container_pc_gutter: 130px;
+$container_mo_gutter: 70px;
+
+// grid
+$grid_pc_row: 46px;
+$grid_pc_row_gutter: 34px;
+$grid_pc_column: 84px;
+$grid_pc_column_gutter: 32px;
+$grid_mo_row: 34px;
+$grid_mo_row_gutter: 26px;
+$grid_mo_column: 46px;
+$grid_mo_column_gutter: 20px;
+//> 그리드
+
+//< 프로젝트 상품 비율
+// $prod_ratio_base: var(--prod_ratio_base);
+// $prod_height_base: calc($prod_ratio_base * 100%);
+//> 프로젝트 상품 비율
+
+//< font
+$fontSize_base: 10px;
+$fontFamily_base: 'PretendardVariable', sans-serif;
+$fontPath: '../font/';// local
+// $fontPath: 'https://img.mmonsolution.com/mall/ui/font/';// CDN
+
+// 기본 폰트
+$color_text_base: #101010;
+//> font
+
+//< z-index
+$zIndex_bom: 3300;
+$zIndex_loading: 3200;
+$zIndex_most: 3000;
+$zIndex_skip: 3100;
+$zIndex_modal: 2100;
+$zIndex_popup: 2000;
+$zIndex_header: 1200;// 1000: mobile
+$zIndex_toolbar: 1100;
+$zIndex_sidebar: 1000;// 1200: mobile
+$zIndex_floating: 100;
+$zIndex_alert: 10;// 텍스트 경고
+//> z-index
+
+//< transition sec
+$time_base: 0.4s;
+$time_fast: 0.2s;
+$time_faster: 0.1s;
+$time_slow: 0.7s;
+$time_slower: 1s;
+//> transition sec
+
+// 1px transpatent gif
+$image_empty: 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
+
+//< 등급
+$color_level5: var(--color_level5);
+$color_level4: var(--color_level4);
+$color_level3: var(--color_level3);
+$color_level2: var(--color_level2);
+$color_level1: var(--color_level1);
+//> 등급

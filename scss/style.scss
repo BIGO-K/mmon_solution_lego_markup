@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+@use 'style/setting/var';
+@use 'common/helper/mixin';
+
+/**
+ * 모듈 forward
+ * font-face
+**/
+
+
+//< 모듈 forward
+// 컴포넌트
+@forward 'style/component/block';
+@forward 'style/component/bom';
+@forward 'style/component/button';
+@forward 'style/component/form';
+@forward 'style/component/grid';
+@forward 'style/component/image';
+@forward 'style/component/list';
+@forward 'style/component/part';
+@forward 'style/component/text';
+
+// 레이아웃
+@forward 'style/layout/header';
+@forward 'style/layout/modal';
+@forward 'style/layout/nav';
+@forward 'style/layout/side';
+
+// 페이지
+@forward 'style/page/lego';
+//> 모듈 forward

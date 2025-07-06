@@ -1,0 +1,174 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 버튼, 버튼그룹 등 버튼의 기본 단위
+**/
+
+
+//< 탭인덱스
+[tabindex] {
+	cursor: pointer;
+}
+//> 탭인덱스
+
+//< 기본형
+.mm_btn {
+	position: relative;
+	padding: 0 10px;
+	width: auto;
+	height: 28px;
+	border-radius: 3px;
+	background-color: #aeaeae;
+	@include mixin.font(#fff '1.3rem/2.9rem' center);
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		content: '';
+	}
+
+	// 사이즈 - base 제외 / 없음 null (type, padding, height, font-size)
+	$sizes: (sm, 10px, 26px, 1.2rem), (xs, 8px, 23px, 1.2rem), (2xs, 7px, 19px, 1.1rem),
+			(lg, 30px, 46px, 1.5rem), (xl, 30px, 50px, 1.6rem);
+	@each $type, $padding, $height, $fontSize in $sizes {
+		&#{escape('.T=#{$type}')} {
+			@if $height {
+				padding: 0 $padding;
+				height: $height;
+				@include mixin.font('#{$fontSize}/#{math.div($height, const.$fontSize_base) + 0.1rem}');
+			}
+
+			// 둥근 버튼형
+			&#{escape('.T=round')} {
+				border-radius: $height;
+
+				&::after {
+					border-radius: $height;
+				}
+			}
+		}
+	}
+
+	// 색상 - base 제외 / 없음 null (type, background-color, color, border-color)
+	$colors: (dark, #4a4a4a, #fff),
+			 (light, #dcdcdc, #767676), (lightest, #fff, #2a2a2a),
+			 (primary, var.$color_2nd, #fff), (primary-light, #05afb4, #fff);
+	@each $type, $bgColor, $fontColor in $colors {
+		&#{escape('.T=#{$type}')}:not(#{escape('.T=line')}) {
+			@if $bgColor {
+				background-color: $bgColor;
+				color: $fontColor;
+			}
+		}
+	}
+
+	// 라인 - base 제외 / 없음 null (type, background-color, color, border-color)
+	&#{escape('.T=line')} {
+		background-color: transparent;
+		color: #fff;
+
+		&::after {
+			border-color: #fff;
+		}
+
+		$lines: (light, #767676, #767676), (lighter, #888, #888), (lightest, #aeaeae, #888),
+				(dark, #2b2b2b, #2b2b2b),
+				(primary, var.$color_2nd, var.$color_2nd);
+		@each $type, $borderColor, $fontColor in $lines {
+			&#{escape('.T=#{$type}')} {
+				@if $borderColor {
+					color: $fontColor;
+
+					&::after {
+						border-color: $borderColor;
+					}
+				}
+			}
+		}
+	}
+
+	// 둥근 버튼형
+	&#{escape('.T=round')} {
+		border-radius: 28px;
+
+		&::after {
+			border-radius: 28px;
+		}
+	}
+
+	// button 비활성
+	&:disabled,
+	&#{escape('.T=disabled')} {
+		background-color: #dcdcdc !important;
+		color: #767676 !important;
+
+		&::after {
+			border: 0;
+		}
+	}
+
+	// a태그 href가 없을 때 비활성
+	@include mixin.context-unify(a) {
+		&:not([href]) {
+			background-color: #dcdcdc !important;
+			color: #767676 !important;
+
+			> i[class*="ico_"]::before {
+				background-color: #767676;
+			}
+
+			&::after {
+				border: 0;
+			}
+		}
+	}
+}
+//> 기본형
+
+//< 버튼그룹
+.mm_btn_box {
+	@include mixin.font('0' center);
+	@include mixin.clearfix();
+
+	> * {
+		&:nth-child(n+2) {
+			margin: 0 0 0 4px;
+		}
+	}
+
+	// 가운데 (일렬)
+	.mm_block {
+		> .mm_btn {
+			padding: 0;
+			width: 100%;
+
+			&:nth-child(n+2) {
+				margin: 9px 0 0 0;
+			}
+		}
+	}
+
+	// 플렉스
+	&.mm_flex {
+		> * {
+			padding: 0;
+
+			&:nth-child(n+2) {
+				margin: 0 0 0 6px;
+			}
+		}
+	}
+}
+//> 버튼그룹

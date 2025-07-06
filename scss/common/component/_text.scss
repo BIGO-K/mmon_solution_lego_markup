@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 텍스트, 알림, 대체텍스트, 타이틀, 태그, 플래그, 뱃지
+**/
+
+
+//< 기본형
+.mm_text,
+.mui_text {
+	//< 말줄임
+	&-ellipsis {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		word-break: break-all;
+
+		br {
+			display: none;
+		}
+	}
+	//> 말줄임
+
+	//< 쪼개기
+	&-break {
+		word-break: break-all;
+	}
+	//> 쪼개기
+}
+//> 기본형
+
+//< 대체텍스트
+.mm_ir,
+.mui_ir {
+	&-blind {
+		@include mixin.text-ir();
+	}
+
+	&-size {
+		@include mixin.text-ir(size);
+	}
+
+	&-indent {
+		@include mixin.text-ir(indent);
+	}
+
+	&-wa {
+		@include mixin.text-ir(wa);
+	}
+}
+//> 대체텍스트

@@ -1,0 +1,4400 @@
+{
+	"banner": [
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0001",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_pager.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_pager",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_pager.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_1",
+				"replace": ["b_c_wide_1", "b_c_wide_2", "b_c_wide_3"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0002",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_pager_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_pager_1",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_pager_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_1",
+				"replace": ["b_c_wide_1", "b_c_wide_2", "b_c_wide_3"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0003",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_pager_2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_pager_2",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_pager_2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_2",
+				"replace": ["b_c_wide_2", "b_c_wide_3", "b_c_wide_1"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0004",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_pager_3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_pager_3",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_pager_3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_2",
+				"replace": ["b_c_wide_2", "b_c_wide_1", "b_c_wide_3"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0005",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_4",
+				"replace": ["b_c_wide_4", "b_c_wide_5", "b_c_wide_6", "b_c_wide_7"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0006",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_1",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_4",
+				"replace": ["b_c_wide_4", "b_c_wide_5", "b_c_wide_6", "b_c_wide_7"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0007",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_side.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_side",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_side.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_5",
+				"replace": ["b_c_wide_5", "b_c_wide_4", "b_c_wide_6", "b_c_wide_7"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0008",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_side_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_side_1",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_side_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_6",
+				"replace": ["b_c_wide_6", "b_c_wide_4", "b_c_wide_5", "b_c_wide_7"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0009",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh9_s2_side.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh9_s2_side",
+					"src": "../image/_sample/pc/b_c=w0Xh9_s2_side.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_7",
+				"replace": ["b_c_wide_7", "b_c_wide_4", "b_c_wide_5", "b_c_wide_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0010",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh7_s1_pager.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh7_s1_pager",
+					"src": "../image/_sample/pc/b_c=w0Xh7_s1_pager.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_8",
+				"replace": ["b_c_wide_8", "b_c_wide_9", "b_c_wide_10"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0011",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh7_s1_pager_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh7_s1_pager_1",
+					"src": "../image/_sample/pc/b_c=w0Xh7_s1_pager_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_8",
+				"replace": ["b_c_wide_8", "b_c_wide_9", "b_c_wide_10"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0012",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh9_s2_sidePager.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh9_s2_sidePager",
+					"src": "../image/_sample/pc/b_c=w0Xh9_s2_sidePager.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_10",
+				"replace": ["b_c_wide_10", "b_c_wide_8", "b_c_wide_9"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_wide",
+			"name": "와이드 빅배너 0013",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh8_s1_sidePager.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh8_s1_sidePager",
+					"src": "../image/_sample/pc/b_c=w0Xh8_s1_sidePager.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_wide_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_big",
+			"name": "빅배너 0001",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh9_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh9_s1",
+					"src": "../image/_sample/pc/b_c=w12Xh9_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_big_1",
+				"replace": ["b_c_big_1", "b_c_big_2"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_big",
+			"name": "빅배너 0002",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh9_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh9_s1_1",
+					"src": "../image/_sample/pc/b_c=w12Xh9_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_big_2",
+				"replace": ["b_c_big_2", "b_c_big_1"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_big",
+			"name": "빅배너 0003",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh7_s1_pager.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh7_s1_pager",
+					"src": "../image/_sample/pc/b_c=w12Xh7_s1_pager.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_big_3",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_big",
+			"name": "빅배너 0004",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh7_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh7_s1",
+					"src": "../image/_sample/pc/b_c=w12Xh7_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_big_4",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_big",
+			"name": "빅배너 0005",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh8_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh8_s1",
+					"src": "../image/_sample/pc/b_c=w12Xh8_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_big_5",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0001",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh2_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh2_s1",
+					"src": "../image/_sample/pc/b_n=w0Xh2_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_1",
+				"replace": ["b_n_ribbon_1", "b_n_ribbon_2"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0002",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh2_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh2_s1_1",
+					"src": "../image/_sample/pc/b_c=w0Xh2_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_3",
+				"replace": ["b_c_ribbon_3", "b_c_ribbon_4"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0003",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh2_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh2_s1",
+					"src": "../image/_sample/pc/b_c=w0Xh2_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0004",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh3_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh3_s1",
+					"src": "../image/_sample/pc/b_n=w0Xh3_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_2",
+				"replace": ["b_n_ribbon_2", "b_n_ribbon_1"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0005",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh3_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh3_s1_1",
+					"src": "../image/_sample/pc/b_c=w0Xh3_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_4",
+				"replace": ["b_c_ribbon_4", "b_c_ribbon_3"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0006",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh3_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh3_s1",
+					"src": "../image/_sample/pc/b_c=w0Xh3_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_6",
+				"replace": ["b_c_ribbon_6", "b_c_ribbon_5"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0007",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s1",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_1",
+				"replace": ["b_n_ribbon_1", "b_n_ribbon_2"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0008",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s1",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_3",
+				"replace": ["b_c_ribbon_3", "b_c_ribbon_4"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0009",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s1_1",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0010",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh3_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh3_s1",
+					"src": "../image/_sample/pc/b_n=w12Xh3_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_2",
+				"replace": ["b_n_ribbon_2", "b_n_ribbon_1"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0011",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_4",
+				"replace": ["b_c_ribbon_4", "b_c_ribbon_3"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0012",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1_1",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_6",
+				"replace": ["b_c_ribbon_6", "b_c_ribbon_5"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0013",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh2_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh2_s2",
+					"src": "../image/_sample/pc/b_n=w0Xh2_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_7",
+				"replace": ["b_n_ribbon_7", "b_n_ribbon_8"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0014",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh2_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh2_s2",
+					"src": "../image/_sample/pc/b_c=w0Xh2_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0015",
+			"thumbnail": "../image/_sample/pc//b_n=w0Xh3_s2.jpg",
+			"block": [
+				{
+					"mui_id": "/b_n=w0Xh3_s2",
+					"src": "../image/_sample/pc//b_n=w0Xh3_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_8",
+				"replace": ["b_n_ribbon_8", "b_n_ribbon_7"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0016",
+			"thumbnail": "../image/_sample/pc/b_c=w0Xh3_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w0Xh3_s2",
+					"src": "../image/_sample/pc/b_c=w0Xh3_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_6",
+				"replace": ["b_c_ribbon_6", "b_c_ribbon_5"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0017",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s2",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0018",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s2",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0019",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh2_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh2_s3",
+					"src": "../image/_sample/pc/b_n=w0Xh2_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6", "b_n_ribbon_9", "b_n_ribbon_10"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0020",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh3_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh3_s3",
+					"src": "../image/_sample/pc/b_n=w0Xh3_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_6",
+				"replace": ["b_c_ribbon_6", "b_c_ribbon_5", "b_n_ribbon_9", "b_n_ribbon_10"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0021",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_5",
+				"replace": ["b_c_ribbon_5", "b_c_ribbon_6", "b_n_ribbon_9", "b_n_ribbon_10"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0022",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh3_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh3_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh3_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_9",
+				"replace": ["b_n_ribbon_9", "b_n_ribbon_10", "b_c_ribbon_5", "b_c_ribbon_6"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0023",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s1_1",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_11",
+				"replace": ["b_n_ribbon_11", "b_n_ribbon_12"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0024",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s1_3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s1_3",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s1_3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_13",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0025",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s1_2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s1_2",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s1_2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_14",
+				"replace": ["b_c_ribbon_14", "b_c_ribbon_15"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0026",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s1_2.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s1_2",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s1_2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_12",
+				"replace": ["b_n_ribbon_12", "b_n_ribbon_11"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0027",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh2_s1_4.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh2_s1_4",
+					"src": "../image/_sample/pc/b_c=w12Xh2_s1_4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_15",
+				"replace": ["b_c_ribbon_15", "b_c_ribbon_14"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0028",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh3_s1_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh3_s1_1",
+					"src": "../image/_sample/pc/b_n=w12Xh3_s1_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_16",
+				"replace": ["b_n_ribbon_16", "b_n_ribbon_17"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0029",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1_3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1_3",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1_3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_18",
+				"replace": ["b_c_ribbon_18", "b_c_ribbon_19"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0030",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1_2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1_2",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1_2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_20",
+				"replace": ["b_c_ribbon_20", "b_c_ribbon_21"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0031",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh3_s1_2.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh3_s1_2",
+					"src": "../image/_sample/pc/b_n=w12Xh3_s1_2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_16",
+				"replace": ["b_n_ribbon_16", "b_n_ribbon_17"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0032",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1_5.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1_5",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1_5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_18",
+				"replace": ["b_c_ribbon_18", "b_c_ribbon_19"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0033",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh3_s1_4.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh3_s1_4",
+					"src": "../image/_sample/pc/b_c=w12Xh3_s1_4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_20",
+				"replace": ["b_c_ribbon_20", "b_c_ribbon_21"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0034",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh4_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh4_s2",
+					"src": "../image/_sample/pc/b_n=w12Xh4_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_22",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0035",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh4_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh4_s2",
+					"src": "../image/_sample/pc/b_c=w12Xh4_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_23",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0036",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh2_s3_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh2_s3_1",
+					"src": "../image/_sample/pc/b_n=w12Xh2_s3_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_14",
+				"replace": ["b_c_ribbon_14", "b_n_ribbon_24", "b_c_ribbon_25", "b_n_ribbon_26"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0037",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh3_s3_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh3_s3_1",
+					"src": "../image/_sample/pc/b_n=w12Xh3_s3_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_ribbon_25",
+				"replace": ["b_c_ribbon_25", "b_n_ribbon_26", "b_c_ribbon_14", "b_n_ribbon_24"]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_ribbon",
+			"name": "띠배너 0038",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh4_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh4_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh4_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_ribbon_27",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0001",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh5_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh5_s2",
+					"src": "../image/_sample/pc/b_c=w12Xh5_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_1",
+				"replace": [
+					"b_c_division_1",
+					"b_n_division_1",
+					"b_c_division_2",
+					"b_n_division_2"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0002",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh4_s2_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh4_s2_1",
+					"src": "../image/_sample/pc/b_c=w12Xh4_s2_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_2",
+				"replace": [
+					"b_c_division_2",
+					"b_n_division_2",
+					"b_c_division_1",
+					"b_n_division_1"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0003",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh7_s2.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh7_s2",
+					"src": "../image/_sample/pc/b_c=w12Xh7_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_3",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0004",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh9_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh9_s6",
+					"src": "../image/_sample/pc/b_c=w12Xh9_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_4",
+				"replace": [
+					"b_c_division_4",
+					"b_c_division_5",
+					"b_n_division_3"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0005",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh9_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh9_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh9_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_4",
+				"replace": [
+					"b_c_division_4",
+					"b_c_division_5",
+					"b_n_division_3"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0006",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh8_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh8_s3",
+					"src": "../image/_sample/pc/b_c=w12Xh8_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_5",
+				"replace": [
+					"b_c_division_5",
+					"b_n_division_3",
+					"b_c_division_4"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0007",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_5",
+				"replace": [
+					"b_c_division_5",
+					"b_c_division_4"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0008",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh16_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh16_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh16_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_3",
+				"replace": [
+					"b_n_division_3",
+					"b_c_division_4"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0009",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh7_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh7_s3",
+					"src": "../image/_sample/pc/b_c=w12Xh7_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_6",
+				"replace": [
+					"b_c_division_6",
+					"b_n_division_4",
+					"b_n_division_5"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0010",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh7_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh7_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh7_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_6",
+				"replace": [
+					"b_c_division_6",
+					"b_n_division_6"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0011",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh14_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh14_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh14_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_7",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0012",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh15_s6_more.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh15_s6_more",
+					"src": "../image/_sample/pc/b_n=w12Xh15_s6_more.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_8",
+				"replace": [
+					"b_n_division_8",
+					"b_n_division_9"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0013",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh15_s6_pagination.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh15_s6_pagination",
+					"src": "../image/_sample/pc/b_n=w12Xh15_s6_pagination.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_10",
+				"replace": [
+					"b_n_division_10",
+					"b_n_division_9"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0014",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh14_s6_link.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh14_s6_link",
+					"src": "../image/_sample/pc/b_n=w12Xh14_s6_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": "0 0 -29px"
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0015",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh15_s6_link.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh15_s6_link",
+					"src": "../image/_sample/pc/b_n=w12Xh15_s6_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_12",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0016",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh10_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh10_s3",
+					"src": "../image/_sample/pc/b_c=w12Xh10_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_7",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0017",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh10_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh10_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh10_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_7",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0018",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh20_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh20_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh20_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_7",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0019",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh9_s3",
+					"src": "../image/_sample/pc/b_c=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_8",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0020",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh9_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_8",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0021",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh18_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh18_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh18_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_8",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0022",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh5_s3.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh5_s3",
+					"src": "../image/_sample/pc/b_n=w12Xh5_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_13",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0023",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh6_s4.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh6_s4",
+					"src": "../image/_sample/pc/b_c=w12Xh6_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_6",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0024",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh6_s4.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh6_s4",
+					"src": "../image/_sample/pc/b_n=w12Xh6_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_6",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0025",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh12_s8.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh12_s8",
+					"src": "../image/_sample/pc/b_n=w12Xh12_s8.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_6",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0026",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh7_s4.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh7_s4",
+					"src": "../image/_sample/pc/b_c=w12Xh7_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_9",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0027",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh7_s4.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh7_s4",
+					"src": "../image/_sample/pc/b_n=w12Xh7_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_9",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0028",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s4_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s4_refresh",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s4_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_9",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0029",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh5_s4.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh5_s4",
+					"src": "../image/_sample/pc/b_c=w12Xh5_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_10",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0030",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh5_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh5_s5",
+					"src": "../image/_sample/pc/b_c=w12Xh5_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_s_division_1",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0031",
+			"thumbnail": "../image/_sample/pc/b_s=w12Xh5_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_s=w12Xh5_s5",
+					"src": "../image/_sample/pc/b_s=w12Xh5_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_s_division_1",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0032",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh5_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh5_s5",
+					"src": "../image/_sample/pc/b_n=w12Xh5_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_s_division_1",
+				"replace": [
+					"b_s_division_1",
+					"b_n_division_14"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0033",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh6_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh6_s5",
+					"src": "../image/_sample/pc/b_n=w12Xh6_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0034",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh6_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh6_s5",
+					"src": "../image/_sample/pc/b_c=w12Xh6_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0035",
+			"thumbnail": "../image/_sample/pc/b_n=w0Xh11_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w0Xh11_s5",
+					"src": "../image/_sample/pc/b_n=w0Xh11_s5.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_division_12",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0036",
+			"thumbnail": "../image/_sample/pc/b_s=w12Xh6_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_s=w12Xh6_s5",
+					"src": "../image/_sample/pc/b_s=w12Xh6_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_s_division_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0037",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh4_s6.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh4_s6",
+					"src": "../image/_sample/pc/b_n=w12Xh4_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_15",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0038",
+			"thumbnail": "../image/_sample/pc/b_s=w12Xh5_s7.jpg",
+			"block": [
+				{
+					"mui_id": "b_s=w12Xh5_s7",
+					"src": "../image/_sample/pc/b_s=w12Xh5_s7.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": "0 0 -29px"
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_s_division_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0039",
+			"thumbnail": "../image/_sample/pc/b_s=w12Xh3_s7.jpg",
+			"block": [
+				{
+					"mui_id": "b_s=w12Xh3_s7",
+					"src": "../image/_sample/pc/b_s=w12Xh3_s7.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_16",
+				"replace": [
+					"b_n_division_16",
+					"b_n_division_17"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0040",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s9.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s9",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s9.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_18",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0041",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s12.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s12",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s12.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_19",
+				"replace": [
+					"b_n_division_19",
+					"b_n_division_20"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0042",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s18_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s18_1",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s18_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_18",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0043",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s12_1.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s12_1",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s12_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_20",
+				"replace": [
+					"b_n_division_20",
+					"b_n_division_19"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0044",
+			"thumbnail": "../image/_sample/pc/b_c=w12Xh4_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_c=w12Xh4_s5",
+					"src": "../image/_sample/pc/b_c=w12Xh4_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_17",
+				"replace": [
+					"b_n_division_17",
+					"b_n_division_16"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0045",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh4_s5.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh4_s5",
+					"src": "../image/_sample/pc/b_n=w12Xh4_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_17",
+				"replace": [
+					"b_n_division_17",
+					"b_n_division_16"
+				]
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0046",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh8_s10.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh8_s10",
+					"src": "../image/_sample/pc/b_n=w12Xh8_s10.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_17",
+				"replace": []
+			}
+		},
+		{
+			"type": "banner",
+			"sort": "banner_division",
+			"name": "분할배너 0047",
+			"thumbnail": "../image/_sample/pc/b_n=w12Xh9_s10_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "b_n=w12Xh9_s10_refresh",
+					"src": "../image/_sample/pc/b_n=w12Xh9_s10_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_division_21",
+				"replace": []
+			}
+		}
+	],
+	"product": [
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0001",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s4.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s4",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_1",
+				"replace": [
+					"p_n_horizon_1",
+					"p_n_vertical_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0002",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh6_s4.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh6_s4",
+					"src": "../image/_sample/pc/p_c=w12Xh6_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_horizon_1",
+				"replace": [
+					"p_c_horizon_1",
+					"p_c_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0003",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4_refresh",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0004",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4_more.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4_more",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4_more.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_3",
+				"replace": [
+					"p_n_horizon_3",
+					"p_n_horizon_4"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0005",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4_pagination.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4_pagination",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4_pagination.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_5",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0006",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s4_link",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": "0 0 -29px"
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_6",
+				"replace": [
+					"p_n_horizon_6",
+					"p_n_vertical_2",
+					"p_s_vertical_2"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0007",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4_link",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_7",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0008",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s6_1.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s6_1",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s6_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_s_vertical_1",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0009",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh6_s6.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh6_s6",
+					"src": "../image/_sample/pc/p_c=w12Xh6_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_horizon_1",
+				"replace": [
+					"p_c_horizon_1",
+					"p_c_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0010",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s6_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s6_refresh",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s6_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_horizontal",
+			"name": "상품 가로형 0011",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s6_link_1.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s6_link_1",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s6_link_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_s_vertical_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0001",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh9_s3",
+					"src": "../image/_sample/pc/p_n=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_8",
+				"replace": [
+					"p_n_horizon_8",
+					"p_n_vertical_3",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0002",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh9_s3",
+					"src": "../image/_sample/pc/p_c=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_horizon_1",
+				"replace": [
+					"p_c_horizon_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0003",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_refresh",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0004",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_more.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_more",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_more.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_9",
+				"replace": [
+					"p_n_horizon_9",
+					"p_n_horizon_10"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0005",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh9_s3_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh9_s3_link",
+					"src": "../image/_sample/pc/p_n=w12Xh9_s3_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0006",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_link",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_12",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0007",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh9_s3",
+					"src": "../image/_sample/pc/p_n=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_8",
+				"replace": [
+					"p_n_horizon_8",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0008",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh9_s3.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh9_s3",
+					"src": "../image/_sample/pc/p_c=w12Xh9_s3.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_horizon_1",
+				"replace": [
+					"p_c_horizon_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0009",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_refresh",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0010",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_more.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_more",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_more.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_9",
+				"replace": [
+					"p_n_horizon_9",
+					"p_n_horizon_10"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0011",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh9_s3_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh9_s3_link",
+					"src": "../image/_sample/pc/p_n=w12Xh9_s3_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_11",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0012",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh10_s3_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh10_s3_link",
+					"src": "../image/_sample/pc/p_n=w12Xh10_s3_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_horizon_12",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0013",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh17_s6.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh17_s6",
+					"src": "../image/_sample/pc/p_n=w12Xh17_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_horizon_1",
+				"replace": [
+					"p_c_horizon_1",
+					"p_n_vertical_4"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0014",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh18_s6_pagination.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh18_s6_pagination",
+					"src": "../image/_sample/pc/p_n=w12Xh18_s6_pagination.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_5",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0015",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_1",
+				"replace": [
+					"p_n_vertical_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0016",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh7_s4.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh7_s4",
+					"src": "../image/_sample/pc/p_c=w12Xh7_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_vertical_1",
+				"replace": [
+					"p_c_vertical_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0017",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh7_s4_link_1.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh7_s4_link_1",
+					"src": "../image/_sample/pc/p_n=w12Xh7_s4_link_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_2",
+				"replace": [
+					"p_n_vertical_2",
+					"p_n_horizon_6"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0018",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s5.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s5",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_1",
+				"replace": [
+					"p_n_vertical_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0019",
+			"thumbnail": "../image/_sample/pc/p_c=w12Xh6_s5.jpg",
+			"block": [
+				{
+					"mui_id": "p_c=w12Xh6_s5",
+					"src": "../image/_sample/pc/p_c=w12Xh6_s5.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_vertical_1",
+				"replace": [
+					"p_c_vertical_1",
+					"p_s_vertical_1"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0020",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s5_link.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s5_link",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s5_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0021",
+			"thumbnail": "../image/_sample/pc/p_n=w12Xh6_s6.jpg",
+			"block": [
+				{
+					"mui_id": "p_n=w12Xh6_s6",
+					"src": "../image/_sample/pc/p_n=w12Xh6_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_4",
+				"replace": [
+					"p_n_vertical_4",
+					"p_s_vertical_1",
+					"p_c_vertical_2"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0022",
+			"thumbnail": "../image/_sample/pc/p_s=w12Xh6_s6.jpg",
+			"block": [
+				{
+					"mui_id": "p_s=w12Xh6_s6",
+					"src": "../image/_sample/pc/p_s=w12Xh6_s6.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_4",
+				"replace": [
+					"p_n_vertical_4",
+					"p_s_vertical_1",
+					"p_c_vertical_2"
+				]
+			}
+		},
+		{
+			"type": "product",
+			"sort": "product_vertical",
+			"name": "상품 세로형 0023",
+			"thumbnail": "../image/_sample/pc/p_s=w12Xh6_s6_1.jpg",
+			"block": [
+				{
+					"mui_id": "p_s=w12Xh6_s6_1",
+					"src": "../image/_sample/pc/p_s=w12Xh6_s6_1.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_vertical_4",
+				"replace": [
+					"p_n_vertical_4",
+					"p_s_vertical_1",
+					"p_c_vertical_2"
+				]
+			}
+		}
+	],
+	"mixed": [
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0001",
+			"thumbnail": "../image/_sample/pc/bp_ns=w12Xh7_s5.jpg",
+			"block": [
+				{
+					"mui_id": "bp_ns=w12Xh7_s5",
+					"src": "../image/_sample/pc/bp_ns=w12Xh7_s5.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_1",
+				"replace": []
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0002",
+			"thumbnail": "../image/_sample/pc/bp_ns=w12Xh8_s5_link.jpg",
+			"block": [
+				{
+					"mui_id": "bp_ns=w12Xh8_s5_link",
+					"src": "../image/_sample/pc/bp_ns=w12Xh8_s5_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_2",
+				"replace": []
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0003",
+			"thumbnail": "../image/_sample/pc/bp_ns=w12Xh7_s4.jpg",
+			"block": [
+				{
+					"mui_id": "bp_ns=w12Xh7_s4",
+					"src": "../image/_sample/pc/bp_ns=w12Xh7_s4.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_3",
+				"replace": []
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0004",
+			"thumbnail": "../image/_sample/pc/bp_ns=w12Xh8_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "bp_ns=w12Xh8_s4_link",
+					"src": "../image/_sample/pc/bp_ns=w12Xh8_s4_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_4",
+				"replace": []
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0005",
+			"thumbnail": "../image/_sample/pc/bp_ns=w12Xh8_s4_link_1.jpg",
+			"block": [
+				{
+					"mui_id": "bp_ns=w12Xh8_s4_link_1",
+					"src": "../image/_sample/pc/bp_ns=w12Xh8_s4_link_1.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_5",
+				"replace": []
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0006",
+			"thumbnail": "../image/_sample/pc/bp_nc=w12Xh9_s8.jpg",
+			"block": [
+				{
+					"mui_id": "bp_nc=w12Xh9_s8",
+					"src": "../image/_sample/pc/bp_nc=w12Xh9_s8.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [
+				{
+					"S": { "mui_id": "bp_nc=w12Xh8_s8", "src": "../image/_sample/pc/bp_nc=w12Xh8_s8.jpg" },
+					"M": { "mui_id": "bp_nc=w12Xh9_s8", "src": "../image/_sample/pc/bp_nc=w12Xh9_s8.jpg" }
+				}
+			],
+			"mobile": {
+				"block": "bp_ns_mix_6",
+				"replace": ["bp_ns_mix_6", "bp_ns_mix_7"]
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0007",
+			"thumbnail": "../image/_sample/pc/bp_nc=w12Xh11_s7.jpg",
+			"block": [
+				{
+					"mui_id": "bp_nc=w12Xh11_s7",
+					"src": "../image/_sample/pc/bp_nc=w12Xh11_s7.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_8",
+				"replace": ["bp_ns_mix_8", "bp_ns_mix_9"]
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0008",
+			"thumbnail": "../image/_sample/pc/bp_nn=w12Xh19_s12_more.jpg",
+			"block": [
+				{
+					"mui_id": "bp_nn=w12Xh19_s12_more",
+					"src": "../image/_sample/pc/bp_nn=w12Xh19_s12_more.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_10",
+				"replace": ["bp_ns_mix_10", "bp_ns_mix_11"]
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0009",
+			"thumbnail": "../image/_sample/pc/bp_nc=w12Xh11_s7_link.jpg",
+			"block": [
+				{
+					"mui_id": "bp_nc=w12Xh11_s7_link",
+					"src": "../image/_sample/pc/bp_nc=w12Xh11_s7_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": "0 0 -29px"
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_12",
+				"replace": ["bp_ns_mix_12", "bp_ns_mix_13"]
+			}
+		},
+		{
+			"type": "mixed",
+			"sort": "mixed_product",
+			"name": "배너 상품 0010",
+			"thumbnail": "../image/_sample/pc/bp_nn=w12Xh19_s12_pagination.jpg",
+			"block": [
+				{
+					"mui_id": "bp_nn=w12Xh19_s12_pagination",
+					"src": "../image/_sample/pc/bp_nn=w12Xh19_s12_pagination.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "bp_ns_mix_12",
+				"replace": []
+			}
+		}
+	],
+	"combine": [
+		{
+			"type": "combine",
+			"sort": "combine_2n",
+			"name": "2분할 조합형 0001",
+			"thumbnail": "../image/_sample/pc/2n_pb_sn=w12Xh6_s4.jpg",
+			"block": [
+				{
+					"mui_id": "2n_p_n=w6Xh6_s2",
+					"src": "../image/_sample/pc/2n_p_n=w6Xh6_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				},
+				{
+					"mui_id": "2n_b_n=w6Xh6_s2",
+					"src": "../image/_sample/pc/2n_b_n=w6Xh6_s2.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "combine_2n_1",
+				"replace": []
+			}
+		}
+	],
+	"feature": [
+		{
+			"type": "feature",
+			"sort": "feature_recommend",
+			"name": "개인화 상품 추천 0001",
+			"thumbnail": "../image/_sample/pc/reco_p_n=w12Xh9_s9.jpg",
+			"block": [
+				{
+					"mui_id": "reco_p_n=w12Xh9_s9",
+					"src": "../image/_sample/pc/reco_p_n=w12Xh9_s9.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_recomend_1",
+				"replace": []
+			},
+			"paid": { "product": "개인화 상품 추천", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_recommend",
+			"name": "개인화 상품 추천 0002",
+			"thumbnail": "../image/_sample/pc/reco_p_n=w12Xh10_s9_link.jpg",
+			"block": [
+				{
+					"mui_id": "reco_p_n=w12Xh10_s9_link",
+					"src": "../image/_sample/pc/reco_p_n=w12Xh10_s9_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_recomend_2",
+				"replace": []
+			},
+			"paid": { "product": "개인화 상품 추천", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_personal",
+			"name": "내 사이즈 맞춤 추천 0001",
+			"thumbnail": "../image/_sample/pc/pers_tp_nn=w12Xh16_s10_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "pers_tp_nn=w12Xh16_s10_refresh",
+					"src": "../image/_sample/pc/pers_tp_nn=w12Xh16_s10_refresh.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "tp_nn_personal_1",
+				"replace": []
+			},
+			"paid": { "product": "내 사이즈 맞춤 추천", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_personal",
+			"name": "내 사이즈 맞춤 추천 0002",
+			"thumbnail": "../image/_sample/pc/pers_tp_nn=w12Xh16_s10_refresh_1.jpg",
+			"block": [
+				{
+					"mui_id": "pers_tp_nn=w12Xh16_s10_refresh_1",
+					"src": "../image/_sample/pc/pers_tp_nn=w12Xh16_s10_refresh_1.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "tp_nn_personal_2",
+				"replace": []
+			},
+			"paid": { "product": "내 사이즈 맞춤 추천", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_ranking",
+			"name": "랭킹 0001",
+			"thumbnail": "../image/_sample/pc/rank_p_n=w12Xh9_s4.jpg",
+			"block": [
+				{
+					"mui_id": "rank_p_n=w12Xh9_s4",
+					"src": "../image/_sample/pc/rank_p_n=w12Xh9_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_rank_1",
+				"replace": []
+			},
+			"paid": { "product": "랭킹", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_ranking",
+			"name": "랭킹 0002",
+			"thumbnail": "../image/_sample/pc/rank_p_n=w12Xh10_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "rank_p_n=w12Xh10_s4_link",
+					"src": "../image/_sample/pc/rank_p_n=w12Xh10_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_rank_2",
+				"replace": []
+			},
+			"paid": { "product": "랭킹", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_ranking",
+			"name": "랭킹 0003",
+			"thumbnail": "../image/_sample/pc/rank_p_c=w12Xh8_s6_link.jpg",
+			"block": [
+				{
+					"mui_id": "rank_p_c=w12Xh8_s6_link",
+					"src": "../image/_sample/pc/rank_p_c=w12Xh8_s6_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_c_rank_3",
+				"replace": []
+			},
+			"paid": { "product": "랭킹", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_ranking",
+			"name": "랭킹 0004",
+			"thumbnail": "../image/_sample/pc/rank_p_c=w0Xh11_s6_link_1.jpg",
+			"block": [
+				{
+					"mui_id": "rank_p_c=w0Xh11_s6_link_1",
+					"src": "../image/_sample/pc/rank_p_c=w0Xh11_s6_link_1.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_rank_4",
+				"replace": []
+			},
+			"paid": { "product": "랭킹", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_ranking",
+			"name": "랭킹 0005",
+			"thumbnail": "../image/_sample/pc/rank_p_n=w12Xh9_s6_link.jpg",
+			"block": [
+				{
+					"mui_id": "rank_p_n=w12Xh9_s6_link",
+					"src": "../image/_sample/pc/rank_p_n=w12Xh9_s6_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_rank_5",
+				"replace": []
+			},
+			"paid": { "product": "랭킹", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_magazine",
+			"name": "매거진 0001",
+			"thumbnail": "../image/_sample/pc/maga_b_n=w12Xh8_s3_1.jpg",
+			"block": [
+				{
+					"mui_id": "maga_b_n=w12Xh8_s3_1",
+					"src": "../image/_sample/pc/maga_b_n=w12Xh8_s3_1.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_magazine_1",
+				"replace": []
+			},
+			"paid": { "product": "매거진", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_magazine",
+			"name": "매거진 0002",
+			"thumbnail": "../image/_sample/pc/maga_b_n=w12Xh8_s3_link.jpg",
+			"block": [
+				{
+					"mui_id": "maga_b_n=w12Xh8_s3_link",
+					"src": "../image/_sample/pc/maga_b_n=w12Xh8_s3_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_magazine_2",
+				"replace": []
+			},
+			"paid": { "product": "매거진", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_magazine",
+			"name": "매거진 0003",
+			"thumbnail": "../image/_sample/pc/maga_b_n=w12Xh8_s3.jpg",
+			"block": [
+				{
+					"mui_id": "maga_b_n=w12Xh8_s3",
+					"src": "../image/_sample/pc/maga_b_n=w12Xh8_s3.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_magazine_3",
+				"replace": ["b_c_magazine_3", "b_c_magazine_4"]
+			},
+			"paid": { "product": "매거진", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_showcase",
+			"name": "쇼케이스 0001",
+			"thumbnail": "../image/_sample/pc/show_b_c=w12Xh5_s4.jpg",
+			"block": [
+				{
+					"mui_id": "show_b_c=w12Xh5_s4",
+					"src": "../image/_sample/pc/show_b_c=w12Xh5_s4.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_c_showcase_1",
+				"replace": []
+			},
+			"paid": { "product": "쇼케이스", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_showcase",
+			"name": "쇼케이스 0002",
+			"thumbnail": "../image/_sample/pc/show_b_n=w12Xh6_s4_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "show_b_n=w12Xh6_s4_refresh",
+					"src": "../image/_sample/pc/show_b_n=w12Xh6_s4_refresh.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_showcase_2",
+				"replace": []
+			},
+			"paid": { "product": "쇼케이스", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_showcase",
+			"name": "쇼케이스 0003",
+			"thumbnail": "../image/_sample/pc/show_b_n=w12Xh5_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "show_b_n=w12Xh5_s4_link",
+					"src": "../image/_sample/pc/show_b_n=w12Xh5_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": "0 0 -29px"
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_showcase_3",
+				"replace": []
+			},
+			"paid": { "product": "쇼케이스", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_showcase",
+			"name": "쇼케이스 0004",
+			"thumbnail": "../image/_sample/pc/show_b_n=w12Xh6_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "show_b_n=w12Xh6_s4_link",
+					"src": "../image/_sample/pc/show_b_n=w12Xh6_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "b_n_showcase_4",
+				"replace": []
+			},
+			"paid": { "product": "쇼케이스", "price": 5000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_raffle",
+			"name": "래플 0001",
+			"thumbnail": "../image/_sample/pc/raff_p_n=w12Xh7_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "raff_p_n=w12Xh7_s4_link",
+					"src": "../image/_sample/pc/raff_p_n=w12Xh7_s4_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_raffle_1",
+				"replace": []
+			},
+			"paid": { "product": "래플", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_raffle",
+			"name": "래플 0002",
+			"thumbnail": "../image/_sample/pc/raff_p_n=w12Xh6_s4_link.jpg",
+			"block": [
+				{
+					"mui_id": "raff_p_n=w12Xh6_s4_link",
+					"src": "../image/_sample/pc/raff_p_n=w12Xh6_s4_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_raffle_2",
+				"replace": []
+			},
+			"paid": { "product": "래플", "price": 10000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_coop",
+			"name": "공동구매 0001",
+			"thumbnail": "../image/_sample/pc/coop_p_n=w12Xh6_s1_link.jpg",
+			"block": [
+				{
+					"mui_id": "coop_p_n=w12Xh6_s1_link",
+					"src": "../image/_sample/pc/coop_p_n=w12Xh6_s1_link.jpg",
+					"title": {
+						"includeTitle": false,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_coop_1",
+				"replace": []
+			},
+			"paid": { "product": "공동구매", "price": 1000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_coop",
+			"name": "공동구매 0002",
+			"thumbnail": "../image/_sample/pc/coop_p_n=w12Xh5_s1_link.jpg",
+			"block": [
+				{
+					"mui_id": "coop_p_n=w12Xh5_s1_link",
+					"src": "../image/_sample/pc/coop_p_n=w12Xh5_s1_link.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_coop_2",
+				"replace": []
+			},
+			"paid": { "product": "공동구매", "price": 20000000 }
+		},
+		{
+			"type": "feature",
+			"sort": "feature_360deg",
+			"name": "360도 뷰 0001",
+			"thumbnail": "../image/_sample/pc/mult_p_n=w12Xh14_s10_refresh.jpg",
+			"block": [
+				{
+					"mui_id": "mult_p_n=w12Xh14_s10_refresh",
+					"src": "../image/_sample/pc/mult_p_n=w12Xh14_s10_refresh.jpg",
+					"title": {
+						"includeTitle": true,
+						"useTitle": false,
+						"main": null,
+						"sub": null,
+						"align": null,
+						"margin": null
+					}
+				}
+			],
+			"sizes": [],
+			"mobile": {
+				"block": "p_n_mult_1",
+				"replace": []
+			},
+			"paid": { "product": "360도 뷰", "price": 5000000 }
+		}
+	]
+}

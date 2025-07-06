@@ -1,0 +1,229 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 컴포넌트
+ * 블록리스트
+**/
+
+
+//< 블록리스트
+.m_lego-block-list {
+	&#{escape('.S=block-modal-on')} {
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0,0,0,.7);
+			content: "";
+		}
+
+		.m_lego-block-item:not(#{escape('.S=on')}) {
+			&:hover {
+				.image_block {
+					cursor: auto;
+				}
+
+				&::after {
+					content: none;
+				}
+			}
+
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(#000, 0.7);
+				content: '';
+			}
+		}
+	}
+
+	// 상단 분류 선택
+	> .mm_dropdown {
+		.btn_dropdown {
+			padding: 0 34px 0 13px;
+			height: 40px;
+			border: 1px solid #cdcdcd;
+			background-color: #fff;
+
+			> b {
+				display: block;
+				@include mixin.text-ellipsis(1);
+				@include mixin.font('1.4rem/3.9rem' left);
+			}
+
+			.ico_dropdown {
+				right: 11px;
+			}
+		}
+
+		.mm_dropdown-item-inner {
+			position: absolute;
+			z-index: 1;
+			top: 39px;
+			right: 0;
+			left: 0;
+			border: 1px solid #cdcdcd;
+			background-color: #fff;
+
+			> .mm_scroller {
+				padding: 10px 0;
+				max-height: 184px;
+			}
+
+			a {
+				display: block;
+				padding: 7px 13px 6px;
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	// 블록 리스트
+	> ul {
+		&:first-child {
+			margin-top: -20px;
+		}
+
+		> li {
+			position: relative;
+			margin-top: 20px;
+
+			// 블록타이틀
+			.text_title {
+				padding-bottom: 6px;
+				@include mixin.font(rgba(#fff, 0.6) '1.2rem/1.4rem');
+			}
+
+			// 확대보기
+			.btn_zoom {
+				position: absolute;
+				top: 0;
+				right: 2px;
+				bottom: 2px;
+				left: 0;
+
+				.ico_zoom {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					width: 24px;
+					height: 24px;
+					background-color: rgba(#000, 0.45);
+
+					&::before {
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+//> 블록리스트
+
+//< 블록 아이템
+.m_lego-block-item {
+	&#{escape('.S=image_ghost')} {
+		.image_block {
+			> img {
+				@include mixin.opacity(0);
+			}
+		}
+	}
+
+	&#{escape('.S=item-selected')} {
+		pointer-events: none;
+
+		.text_title {
+			color: #00f8ff;
+		}
+
+		.image_block {
+			border-color: #00f8ff;
+
+			&::before {
+				z-index: 1;
+				top: 2px;
+				left: 4px;
+				width: 12px;
+				height: 12px;
+				@include mixin.svg(#101010 url('../image/common/ico_check_circle.svg'));
+			}
+
+			&::after {
+				position: absolute;
+				top: -2px;
+				left: -2px;
+				padding: 0 6px 0 21px;
+				height: 22px;
+				background-color: #00f8ff;
+				@include mixin.font(v_500 #000 '1.2rem/2.2rem');
+				content: '적용중';
+			}
+		}
+	}
+
+	&#{escape('.S=on')} {
+		.text_title {
+			color: #00f8ff;
+		}
+
+		.image_block {
+			border-color: #00f8ff;
+		}
+	}
+
+	// 블록 이미지
+	.image_block {
+		position: relative;
+		width: 100%;
+		border: 2px solid transparent;
+		background-color: #f5f5f5;
+
+		&:not(:has(.S\=loaded)):not(.mm_image-none)::before {
+			z-index: 0;
+			top: 50%;
+			left: 50%;
+			width: 48%;
+			height: 100%;
+			@include mixin.transform(translate(-50%, -50%));
+			@include mixin.svg(#d3d3d3 url('../image/common/logo.svg'));
+		}
+
+		&::before {
+			position: absolute;
+			@include mixin.prefix(mask-repeat, no-repeat, webkit);
+			@include mixin.prefix(mask-position, 50% 50%, webkit);
+			@include mixin.prefix(mask-size, contain, webkit);
+			content: '';
+		}
+
+		&.mm_image-none {
+			height: 50px;
+
+			.ico_none::before {
+				width: 48%;
+			}
+		}
+
+		> img {
+			position: relative;
+			height: 50px;
+
+			&#{escape('.S=loaded')} {
+				height: auto;
+			}
+		}
+	}
+}
+//> 블록 아이템

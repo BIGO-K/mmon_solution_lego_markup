@@ -1,0 +1,148 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+@use '../../style/setting/var';
+
+/**
+ * 레이아웃
+ * GNB
+**/
+
+
+//< GNB
+.m_lego-gnb {
+	background-color: var.$sidebar_content_bg;
+	@include mixin.transition(transform, const.$time_fast);
+
+	// 좌측 메뉴
+	> ul {
+		overflow: hidden;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: var.$gnb_content;
+		background-color: var.$color_main;
+		@include mixin.transition(width const.$time_fast ease-in-out);
+
+		li {
+			position: relative;
+			height: 50px;
+
+			> button {
+				padding: 18px;
+				width: 100%;
+				height: 50px;
+				@include mixin.font(#fff '1.4rem' left, nowrap);
+				@include mixin.opacity(0.4);
+
+				b {
+					margin-left: 15px;
+					font-size: 0;
+					@include mixin.opacity(0);
+					@include mixin.transition(opacity const.$time_fast ease-in);
+				}
+
+				.ico_video {
+					margin-right: -2px;
+				}
+
+				.ico_combine {
+					margin-top: 1px;
+				}
+
+				.ico_feature {
+					margin-top: -1px;
+				}
+
+				// 현재메뉴
+				&#{escape('.S=gnb-on')} {
+					background-color: var.$color_3rd;
+					@include mixin.opacity(1);
+				}
+			}
+
+			.mm_tooltip {
+				position: absolute;
+				top: 0;
+				right: -1px;
+				padding: 16px;
+				@include mixin.opacity(0);
+				@include mixin.transition(opacity const.$time_fast ease-in);
+
+				.btn_tooltip {
+					.ico_tooltip::before {
+						background-color: #dea83b;
+					}
+				}
+
+				&-inner {
+					top: 33px;
+					right: 14px;
+					left: auto;
+					width: 168px;
+				}
+			}
+		}
+
+		// GNB 좌측메뉴 펼침
+		&:hover {
+			overflow: visible;
+			width: 200px;
+
+			> li {
+				&:hover {
+					> button {
+						background-color: var.$color_3rd;
+						@include mixin.opacity(1);
+					}
+				}
+
+				> button {
+					b {
+						font-size: 1.4rem;
+						@include mixin.opacity(1);
+					}
+				}
+			}
+
+			.mm_tooltip {
+				@include mixin.opacity(1);
+			}
+		}
+	}
+
+	// 블록
+	&-block {
+		position: relative;
+		margin-left: var.$gnb_content;
+		min-height: 100%;
+
+		// 블록 리스트
+		.m_lego-block-list {
+			display: none;
+			padding: 18px;
+
+			// 현재 메뉴
+			&#{escape('.S=gnb-on')} {
+				display: block;
+			}
+		}
+	}
+}
+//> GNB
+
+//< GNB에서 블록 드래그
+.image_block#{escape('.S=image_dragging')} {
+	@include mixin.prefix(box-shadow, 0 0 10px 0 rgba(#000, 0.2), webkit);
+	position: fixed;
+	z-index: 10000;
+	border: 4px solid #fff;
+	// pointer-events: none;
+	cursor: none;
+}
+//> GNB에서 블록 드래그

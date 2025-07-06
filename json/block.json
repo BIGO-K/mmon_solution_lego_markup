@@ -1,0 +1,160 @@
+{
+	"header": [
+		{
+			"mui_id": "ha",
+			"pc": {
+				"name": "타입 0001",
+				"thumbnail": "../image/_sample/pc/header_A.jpg"
+			},
+			"mobile": {
+				"name": "타입 0001",
+				"thumbnail": "../image/_sample/mo/header_A.jpg"
+			}
+		},
+		{
+			"mui_id": "hb",
+			"pc": {
+				"name": "타입 0002",
+				"thumbnail": "../image/_sample/pc/header_B.jpg"
+			},
+			"mobile": {
+				"name": "타입 0002",
+				"thumbnail": "../image/_sample/mo/header_B.jpg"
+			}
+		},
+		{
+			"mui_id": "hc",
+			"pc": {
+				"name": "타입 0003",
+				"thumbnail": "../image/_sample/pc/header_C.jpg"
+			},
+			"mobile": {
+				"name": "타입 0003",
+				"thumbnail": "../image/_sample/mo/header_C.jpg"
+			}
+		},
+		{
+			"mui_id": "hd",
+			"pc": {
+				"name": "타입 0004",
+				"thumbnail": "../image/_sample/pc/header_D.jpg"
+			},
+			"mobile": {
+				"name": "타입 0004",
+				"thumbnail": "../image/_sample/mo/header_D.jpg"
+			}
+		},
+		{
+			"mui_id": "he",
+			"pc": {
+				"name": "타입 0005",
+				"thumbnail": "../image/_sample/pc/header_E.jpg"
+			},
+			"mobile": {
+				"name": "타입 0005",
+				"thumbnail": "../image/_sample/mo/header_E.jpg"
+			}
+		},
+		{
+			"mui_id": "hf",
+			"pc": {
+				"name": "타입 0006",
+				"thumbnail": "../image/_sample/pc/header_F.jpg"
+			},
+			"mobile": {
+				"name": "타입 0006",
+				"thumbnail": "../image/_sample/mo/header_F.jpg"
+			}
+		}
+	],
+	"footer": [
+		{
+			"mui_id": "fa",
+			"pc": {
+				"name": "타입 0001",
+				"thumbnail": "../image/_sample/pc/footer_A.jpg"
+			},
+			"mobile": {
+				"name": "타입 0001",
+				"thumbnail": "../image/_sample/mo/footer_A.jpg"
+			}
+		},
+		{
+			"mui_id": "fb",
+			"pc": {
+				"name": "타입 0002",
+				"thumbnail": "../image/_sample/pc/footer_B.jpg"
+			},
+			"mobile": {
+				"name": "타입 0002",
+				"thumbnail": "../image/_sample/mo/footer_B.jpg"
+			}
+		},
+		{
+			"mui_id": "fc",
+			"pc": {
+				"name": "타입 0003",
+				"thumbnail": "../image/_sample/pc/footer_C.jpg"
+			},
+			"mobile": {
+				"name": "타입 0003",
+				"thumbnail": "../image/_sample/mo/footer_C.jpg"
+			}
+		},
+		{
+			"mui_id": "fd",
+			"pc": {
+				"name": "타입 0004",
+				"thumbnail": "../image/_sample/pc/footer_D.jpg"
+			},
+			"mobile": {
+				"name": "타입 0004",
+				"thumbnail": "../image/_sample/mo/footer_D.jpg"
+			}
+		}
+	],
+	"toolbar": [
+		{
+			"mui_id": "ta",
+			"mobile": {
+				"name": "타입 0001",
+				"thumbnail": "../image/_sample/mo/toolbar_A.jpg"
+			}
+		},
+		{
+			"mui_id": "tb",
+			"mobile": {
+				"name": "타입 0002",
+				"thumbnail": "../image/_sample/mo/toolbar_B.jpg"
+			}
+		},
+		{
+			"mui_id": "tc",
+			"mobile": {
+				"name": "타입 0003",
+				"thumbnail": "../image/_sample/mo/toolbar_C.jpg"
+			}
+		},
+		{
+			"mui_id": "td",
+			"mobile": {
+				"name": "타입 0004",
+				"thumbnail": "../image/_sample/mo/toolbar_D.jpg"
+			}
+		},
+		{
+			"mui_id": "te",
+			"mobile": {
+				"name": "타입 0005",
+				"thumbnail": "../image/_sample/mo/toolbar_E.jpg"
+			}
+		},
+		{
+			"mui_id": "tf",
+			"mobile": {
+				"name": "타입 0006",
+				"thumbnail": "../image/_sample/mo/toolbar_F.jpg"
+			}
+		}
+	]
+}

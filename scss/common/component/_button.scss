@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+/**
+ * 컴포넌트
+ * 버튼, 버튼그룹 등 버튼의 기본 단위
+**/
+
+
+//< 탭인덱스
+[tabindex] {
+	cursor: pointer;
+}
+//> 탭인덱스

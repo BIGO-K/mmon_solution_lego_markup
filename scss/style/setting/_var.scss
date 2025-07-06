@@ -1,0 +1,98 @@
+@charset 'utf-8';
+
+/**
+ * 셋팅
+ * 전역변수
+ * color: primary, secondary, tertiary, positive, negative, background, line, text, icon, tag...
+ * font-size: body, button, tag
+**/
+
+
+//< 컬러
+// 포인트
+$color_main: #16181e;
+$color_2nd: #00989c;
+$color_3rd: #32363a;
+
+// 상태(긍정/부정)
+$color_negative_base: #ee4f10;
+// $color_positive_base: $color_tertiary_base;//$color_main;
+//> 컬러
+
+//< 스크롤바
+$color_scrollbar_track: #cdcdcd;
+$color_scrollbar_thumb: #5f6367;
+//> 스크롤바
+
+//< 최소사이즈
+$minWidth_pc_base: 1360px;
+$minWidth_mo_base: 320px;
+//> 최소사이즈
+
+//< 레이아웃
+// 단계: min, base, extend
+// header
+$header_height_base: 50px;
+
+//sidebar
+$sidebar_content_base: 296px;
+$sidebar_content_bg: #24272a;
+
+// gnb
+$gnb_content: 50px;
+$gnb_height_base: 46px; // 카테고리+상품(cp_nn) 블럭의 sticky 모션 스타일에 사용
+
+// header
+$header_height_base: 45px; // 카테고리+상품(cp_nn) 블럭의 sticky 모션 스타일에 사용
+$header_height_main: 56px; // 카테고리+상품(cp_nn) 블럭의 sticky 모션 스타일에 사용
+
+// popup
+
+// modal
+$modal_header_height_base: 51px;
+$modal_width_base: 460px;
+// $modal_width_sm: 412px;
+$modal_width_lg: 880px;
+$modal_width_xl: 992px;
+
+// skeleton
+// $skeleton_color_base: #eee;
+
+// bom
+//> 레이아웃
+
+//< 폼
+// 단계: sm, base, lg
+
+// 기본 형태
+$form_borderColor_base: #cdcdcd;
+$form_borderRadius_base: 2px;
+$form_color_base: #101010;
+$form_color_negative: #ff4800;
+$form_fontSize_base: 1.4rem;
+// $form_fontSize_lg: 15px;
+$form_clear_base: 43px;
+
+// 텍스트 인풋
+$form_text_height_base: 40px;
+// $form_text_height_lg: 50px;
+// $form_textarea_lineheight: ($form_fontSize_base + 8px);// 계산식에 사용되어 괄호필요
+
+// 체크박스
+$form_check_height_base: 19px;
+$form_check_fontSize_base: 1.4rem;
+
+// 라디오
+$form_radio_height_base: 19px;
+$form_radio_fontSize_base: 1.4rem;
+
+// 셀렉트
+$form_select_height_base: 34px;
+$form_select_fontSize_base: 1.2rem;
+
+// 파일
+$form_file_clear: $form_text_height_base - 6px;
+
+// 이미지
+$form_image_clear: 22px;
+//> 폼

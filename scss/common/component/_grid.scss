@@ -1,0 +1,69 @@
+@charset 'utf-8';
+
+@use 'sass:math';
+@use '../../common/helper/function' as *;
+@use '../../common/helper/mixin';
+@use '../../common/setting/const';
+
+/**
+ * 컴포넌트
+ * 그리드
+**/
+
+
+:root,
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+:root {
+	background-color: transparent;
+	@include mixin.font(const.$color_text_base v_500 '#{const.$fontSize_base}/1' [const.$fontFamily_base], -0.25px);
+	word-break: break-all;
+	@include mixin.prefix(text-size-adjust, none, webkit);
+
+	// 스크롤 안됨(스크립트로 적용)
+	&#{escape('.S=noscroll')} {
+		// overflow: hidden;
+	}
+}
+
+body {
+	image-rendering: -webkit-optimize-contrast;// 파폭(-moz-crisp-edges)은 적용하면 더 깨져보임
+	// @include mixin.prefix(user-select, none, webkit);// 본문 드래그 선택 방지
+	font-size: 1rem;
+	-webkit-touch-callout: none;
+}
+
+//< 전체 영역
+.mm_app {
+	position: relative;
+	height: 100%;
+}
+//> 전체 영역
+
+//< 기본 화면
+.mm_view {
+	position: relative;
+	height: 100%;
+}
+//> 기본 화면
+
+//< 페이지
+.mm_page {
+	position: relative;
+	height: 100%;
+
+	> .mm_scroller {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 50px 0;
+	}
+}
+//> 페이지
