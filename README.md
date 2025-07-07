@@ -1,9 +1,10 @@
-# Solution LEGO (homepage)
-+ 엠몬 전체일정 https://docs.google.com/spreadsheets/d/1ZNsKeZrZAr2o6DdYGvnWOHJsOPCGyQJgjerCMU5jhUY/edit#gid=425404578
-+ 레고 및 홈페이지 회의록 https://drive.google.com/drive/u/0/folders/1dkxVA4QmVgDhv5hD7B5mZpI7bpHOT-Rd
+# 솔루션 블록 조합(레고)
+_2022.02 ~ 2022.10_
++ 엠몬 전체일정
++ 레고 및 홈페이지 회의록
 + 기획 구글드라이브 경로
-+ 디자인 구글드라이브 경로 https://docs.google.com/spreadsheets/d/17rZa7t6h5t_oplHYtAPDIfUzDYsf62NO/edit#gid=253575788
-+ 퍼블리싱 작업 리스트 https://publish.mmonstar.co.kr/solution/lego/
++ 디자인 구글드라이브 경로
++ 퍼블리싱 작업 리스트
 <br><br>
 
 ## 작업환경
@@ -11,14 +12,12 @@
 	- SFTP의 **sftp.json** 파일설정
 		```
 		"name": "ftp",
-		"host": "1.xxx.xx.x2",
+		"host": "",
 		"protocol": "sftp",
 		"port": 8023,
-		"username": "mmon_publish",
+		"username": "",
 		"password": "비밀번호",
-		"remotePath": "/home/mmon_publish/html/solution/lego/",(실서버)
-		"remotePath": "/home/mmon_publish/_merge/html/solution/lego/",(FTP전달용)
-		"remotePath": "/home/mmon_publish/작업자/html/solution/lego/",(서브 작업자 설정방식)
+		"remotePath": "",
 		"uploadOnSave": true,
 		...
 		"watcher": {
